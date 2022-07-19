@@ -6,24 +6,28 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <meta name="author" content="harrnish">
 
-      <title>Portfolio Website Template | CODEGRID</title>
+      <title>LEONARDO PATRÍCIO</title>
 
       <!-- stylesheet -->
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
       <!-- bootstrap cdns -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
       <!-- google fonts -->
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&family=Lato&family=Oswald&display=swap" rel="stylesheet"> 
+      <!-- font-family: 'Kantumruy Pro', sans-serif;
+      font-family: 'Lato', sans-serif;
+      font-family: 'Oswald', sans-serif; -->
 
       <!-- terminal effect -->
-      <script src="t.min.js"></script>
+      <script src="assets/js/t.min.js"></script>
 
       <!-- for on scroll animations -->
       <link rel="stylesheet" href="animate.css">
-      <script src="wow.min.js"></script>
+      <script src="assets/js/wow.min.js"></script>
 
 </head>
 <body>
@@ -31,15 +35,16 @@
 
             <!--------------- navbar starts here --------------->
             <nav>
-                  <span id="brand">
-                        <a href="index.html">harrnish</a>
+                  <span id="name">
+                        <a href="index.html">LEONARDO PATRÍCIO</a>
                   </span>
 
                   <ul id="menu">
-                        <li><a href="index.html">home<span>.</span></a></li>
-                        <li><a href="work.html">work<span>.</span></a></li>
-                        <li><a href="about.html">about me<span>.</span></a></li>
-                        <li><a href="contact.html">contact<span>.</span></a></li>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="work.html">audio</a></li>
+                        <li><a href="work.html">video</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="contact.html">let's talk</a></li>
                   </ul>
 
                   <div id="toggle">
@@ -63,9 +68,15 @@
 
 
             <!--------------- hero section starts here --------------->
-            <div class="hero">
-                  <div class="header">
-                        <h1 class="line anim-typewriter">I make brands matter in culture.</h1>
+            <div class="hero linha" id="hero">
+                  <div class="header coluna">
+                        <video autoplay loop muted width="800px">
+                              <source src="https://user-images.githubusercontent.com/108439879/176953218-9e7c3052-9114-446c-8e3d-26c8c32bd00c.mp4" type="video/mp4" >
+                        </video> 
+                  </div>
+                  <div>
+                        <h2>audio engineer</h2>
+                        <h2>filmmaker</h2>
                   </div>
             </div>
 
@@ -78,26 +89,24 @@
             <div class="container-fluid">
                   <br><br><br>
 
-                  <h6>Selected projects</h6>
-
-                  <div class="vertical"></div>
-                  <br>
-
-                  <div class="whitespace"></div>
+                  <h6>recent projects</h6>
+                  <h6>_______________</h6>
                   <div class="whitespace"></div>
 
                   <div class="row">
-                        <div class="col-lg-8"></div>
-
-                        <div class="col-lg-4 project project1 wow fadeInUp" onclick="location.href='project.html'"></div>
+                        <div class="col-lg-10 project project1 wow fadeInUp" onclick="location.href='projects/heras.html'"></div>
+                        <div class="col-lg-10 wow fadeInUp" >
+                              <a>2022</a>
+                        </div>
                   </div>
 
                   <div class="whitespace"></div>
 
                   <div class="row">
-                        <div class="col-lg-6 project project2 wow fadeInUp" onclick="location.href='project.html'"></div>
-
-                        <div class="col-lg-6"></div>
+                        <div class="col-lg-6 project project2 wow fadeInUp" onclick="location.href='projects/forevertogether.html'"></div>
+                        <div class="col-lg-10 wow fadeInUp" >
+                              <a>2021</a>
+                        </div>
                   </div>
 
                   <div class="whitespace"></div>
@@ -105,13 +114,13 @@
                   <div class="row">
                         <div class="col-lg-7"></div>
 
-                        <div class="col-lg-4 project project3 wow fadeInUp" onclick="location.href='project.html'"></div>
-
-                        <div class="col-lg-1"></div>
+                        <div class="col-lg-5 project project3 wow fadeInUp" onclick="location.href='project.html'"></div>
+                        <div class="col-lg-10 wow fadeInUp" >
+                              <a>2019</a>
+                        </div>
                   </div>
-
+                  <!--
                   <div class="whitespace"></div>
-
                   <div class="row">
                         <div class="col-lg-1"></div>
 
@@ -119,8 +128,9 @@
 
                         <div class="col-lg-6"></div>
                   </div>
-
+                  -->
                   <div class="whitespace"></div>
+                   
             </div>
             <!--------------- projects section ends here --------------->
 
@@ -134,7 +144,7 @@
                         <div class="collab">
                               <div class="row">
                                     <div class="col-lg-12">
-                                          <p class="wow fadeInUp">Got an interesting project? I can help you.</p>
+                                          <p class="wow fadeInUp">Let's work together!</p>
                                     </div>
                               </div>
                         </div>
@@ -148,29 +158,25 @@
                         <br><br>
 
                         <div class="info">
-                              <div class="row">
+                              <div class="row container">
                                     <div class="col-lg-4" id="personal">
-                                          <p class="wow fadeInUp">connect with me</p>
-                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s">ig @harrnish</h4>
-                                          <br><br>
-                                    </div>
-
-                                    <div class="col-lg-4" id="media">
-                                          <p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
-
-                                          <ul>
-                                                <li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">fb</li>
-                                                <li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">ig</li>
-                                                <li id="tw" class="wow fadeInUp" data-wow-delay="0.8s">tw</li>
-                                                <li id="yt" class="wow fadeInUp" data-wow-delay="1s">yt</li>
-                                          </ul>
-
+                                          <p class="wow fadeInUp"></p>
+                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s">@lenoinlato</h4>
                                           <br><br>
                                     </div>
 
                                     <div class="col-lg-4" id="address">
-                                          <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
-                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s">harrnish@gmail.com</h4>
+                                          <p class="wow fadeInUp" data-wow-delay="0s">what do you have in mind?</p>
+                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s">lenoinlato@gmail.com</h4>
+                                          <br><br>
+                                    </div>
+                                    <div class="col-lg-4" id="media">
+
+                                          <ul>
+                                                <a href="instagram.com/thisisfolden" class="fa fa-instagram fa-1x wow fadeInUp" data-wow-delay="0.4s"></a>
+                                                <a href="instagram.com/thisisfolden" class="fa fa-youtube fa-1x wow fadeInUp" data-wow-delay="0.6s"></a>
+                                          </ul>
+
                                           <br><br>
                                     </div>
                               </div>
@@ -210,7 +216,14 @@
 
       // nav animation
 
-      TweenMax.from("#brand", 1, {
+      TweenMax.from("#name", 1, {
+            delay: 0.2,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from("#hero", 1, {
             delay: 0.4,
             y: 10,
             opacity: 0,
