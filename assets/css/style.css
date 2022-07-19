@@ -306,16 +306,25 @@ h6 {
 
 .project {
       height: 500px;
+      transition: 0.3s;
 }
 
-.project1 {
+.project:hover {
+      height: 600px;
+      cursor: pointer;
+      transition: 0.3s;
+}
+
+
+.heras {
       background: url(https://i.imgur.com/89YLih5.jpeg) no-repeat 50% 50%;
       background-size: cover;
 }
 
-.project1::after {
+.heras::after {
       content: "HERAS | GrETUA";
       font-family: 'Kantumruy Pro', sans-serif;
+      font-style: italic;
       font-size: 36px;
       font-weight: bold;
       position: relative;
@@ -327,15 +336,36 @@ h6 {
       bottom: 0;
 }
 
-.project2 {
-      background: url(https://i.imgur.com/dB6tmGE.jpeg) no-repeat 70% 50%;
+.forevertogether {
+      background: url(https://i.imgur.com/dB6tmGE.jpeg) no-repeat 40% 50%;
       background-size: cover;
       left: 20%
 }
 
-.project2::after {
+.forevertogether::after {
       content: "FOREVER TOGETHER";
       font-family: 'Kantumruy Pro', sans-serif;
+      font-style: italic;
+      font-size: 36px;
+      position: relative;
+      color: #fff;
+      display: block;
+      top: 80%;
+      left: 40%;
+      right: 0;
+      bottom: 0;
+      background-color: #0f0f0f;
+}
+
+.omoca {
+      background: url(https://i.ibb.co/7Vkx0hG/ab67616d0000b2739ecf35c8939cb9c53ce8867c.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.omoca::after {
+      content: "Ó Moça, É Folclore!";
+      font-family: 'Kantumruy Pro', sans-serif;
+      font-style: italic;
       font-size: 36px;
       position: relative;
       color: #fff;
@@ -344,16 +374,18 @@ h6 {
       left: 60%;
       right: 0;
       bottom: 0;
+      background-color: #0f0f0f;
 }
 
-.project3 {
+.deti4devs {
       background: url(https://i.imgur.com/x9mi8Nx.jpeg) no-repeat 50% 50%;
       background-size: cover;
 }
 
-.project3::after {
+.deti4devs::after {
       content: "DETI4devs";
       font-family: 'Kantumruy Pro', sans-serif;
+      font-style: italic;
       font-size: 36px;
       position: relative;
       color: #fff;
@@ -362,7 +394,11 @@ h6 {
       left: -20%;
       right: 0;
       bottom: 0;
+      
 }
+
+
+
 
 /*
 .project4 {
