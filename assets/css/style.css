@@ -243,6 +243,7 @@ nav #menu li a:hover {
       text-align: center;
       letter-spacing: -2px;
       line-height: 58px;
+      
 }
 
 .hero h2 {
@@ -536,12 +537,24 @@ h6 {
 
 .hero-content p {
       font-weight: 300;
-      line-height: 36px;
+      line-height: 20px;
+      
+}
+
+.hero-content h2 {
+      font-weight: 300;
+      line-height: 10px;
+      font-size: 15px;
       color: grey;
+      margin-top: 10%;
 }
 
 .hero-content h6 {
       text-align: left;
+}
+
+.hero-content h1 {
+      font-style: italic;
 }
 
 @media(max-width: 768px) {
