@@ -1,0 +1,152 @@
+/*--------------- projects section --------------- */
+h6 {
+    text-align: center;
+}
+
+.vertical {
+    margin-top: 40px;
+    border-left: 1px solid #fff;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+}
+
+.project {
+    height: 500px;
+    transition: 0.3s;
+}
+
+.project:hover {
+    height: 600px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.heras {
+    background: url(https://i.imgur.com/89YLih5.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.heras::after {
+    content: "HERAS";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 5%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    background-color: #0f0f0f;
+}
+
+.forevertogether {
+    background: url(https://i.imgur.com/dB6tmGE.jpeg) no-repeat 40% 50%;
+    background-size: cover;
+    left: 0%
+}
+
+.forevertogether::after {
+    content: "FOREVER TOGETHER";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 5%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    background-color: #0f0f0f;
+}
+
+.omoca {
+    background: url(https://i.ibb.co/7Vkx0hG/ab67616d0000b2739ecf35c8939cb9c53ce8867c.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.omoca::after {
+    content: " Ó Moça, É Folclore! ";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 5%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    background-color: #0f0f0f;
+}
+
+.deti4devs {
+    background: url(https://i.imgur.com/x9mi8Nx.jpeg) no-repeat 60% 50%;
+    background-size: cover;
+}
+
+.deti4devs::after {
+    content: "DETI4devs";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 90%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    background-color: #0f0f0f; 
+}
+
+.agirl {
+    background: url(https://i.ibb.co/DVp97Dy/wallpapernoletters.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.agirl::after {
+    content: "A Girl Called Depression";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 5%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    background-color: #0f0f0f; 
+}
+
+
+
+.bg_album {
+    background: url(https://i.ibb.co/GCsZK3z/Capa-ALBUM-Digital-Art.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.bg_album::after {
+    content: "ALBUM";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+}
