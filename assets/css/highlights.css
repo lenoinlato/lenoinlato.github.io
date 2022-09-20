@@ -12,19 +12,19 @@ h6 {
 }
 
 .project {
-    height: 500px;
+    height: 240px;
     transition: 0.3s;
 }
 
 .project:hover {
-    height: 600px;
+    height: 300px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 
 .heras {
-    background: url(https://i.imgur.com/89YLih5.jpeg) no-repeat 50% 50%;
+    background: url(https://i.imgur.com/89YLih5.jpeg) no-repeat 40% 40%;
     background-size: cover;
 }
 
@@ -32,7 +32,9 @@ h6 {
     content: "HERAS";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
-    font-size: 20px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 16px;
     font-weight: bold;
     position: relative;
     color: #fff;
@@ -41,11 +43,10 @@ h6 {
     left: 0%;
     right: 0%;
     bottom: 0;
-    background-color: #0f0f0f;
 }
 
 .forevertogether {
-    background: url(https://i.imgur.com/dB6tmGE.jpeg) no-repeat 40% 50%;
+    background: url(https://i.ibb.co/W2dSjmv/coise.jpg) no-repeat 40% 20%;
     background-size: cover;
     left: 0%
 }
@@ -54,12 +55,14 @@ h6 {
     content: "FOREVER TOGETHER";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
-    font-size: 20px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 8px;
     font-weight: bold;
     position: relative;
     color: #fff;
     display: block;
-    top: 5%;
+    top: 10%;
     left: 0%;
     right: 0%;
     bottom: 0;
@@ -74,16 +77,17 @@ h6 {
     content: " Ó Moça, É Folclore! ";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
-    font-size: 20px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 8px;
     font-weight: bold;
     position: relative;
-    color: #fff;
+    color: #0f0f0f;
     display: block;
-    top: 5%;
+    top: 8%;
     left: 0%;
     right: 0%;
     bottom: 0;
-    background-color: #0f0f0f;
 }
 
 .deti4devs {
@@ -95,16 +99,17 @@ h6 {
     content: "DETI4devs";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
-    font-size: 20px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 12px;
     font-weight: bold;
     position: relative;
     color: #fff;
     display: block;
-    top: 90%;
+    top: 10%;
     left: 0%;
     right: 0%;
     bottom: 0;
-    background-color: #0f0f0f; 
 }
 
 .agirl {
@@ -113,25 +118,26 @@ h6 {
 }
 
 .agirl::after {
-    content: "A Girl Called Depression";
+    content: "A. G. C. D.";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
-    font-size: 16px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 12px;
     font-weight: bold;
     position: relative;
     color: #fff;
     display: block;
-    top: 5%;
+    top: 10%;
     left: 0%;
     right: 0%;
     bottom: 0;
-    background-color: #0f0f0f; 
 }
 
 
 
 .bg_album {
-    background: url(https://i.ibb.co/GCsZK3z/Capa-ALBUM-Digital-Art.jpg) no-repeat 50% 50%;
+    background: url(https://bangavenue.github.io/images/BG_Long_2.jpg) no-repeat 50% 50%;
     background-size: cover;
 }
 
@@ -139,13 +145,15 @@ h6 {
     content: "ALBUM";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
-    font-size: 20px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
     font-weight: bold;
     position: relative;
     color: #fff;
     display: block;
-    top: 5%;
-    left: 5%;
+    top: 10%;
+    left: 0%;
     right: 5%;
     bottom: 0;
 }
@@ -155,128 +163,3 @@ h6 {
 
 /*--------------- gallery --------------- */
 
-
-
-.gallerya {
-  display: grid;
-  grid-template-rows: repeat(5, 18vh);
-  grid-template-columns: repeat(2, 45vw);
-  transition: all $time ease(gravity);
-  background-color: #82a6cb;
-  border-radius: 10px;
-  padding: 0.25em;
-  cursor: zoom-in;
-  // grid-gap: .25em;
-
-  @media (min-width: 40em) {
-    grid-template-rows: repeat(2, 20vh);
-  }
-
-  @media (min-width: 10em) and (orientation: landscape) {
-    grid-template-columns: repeat(5, 18vw);
-    grid-template-rows: repeat(2, 45vh);
-  }
-    
- @media (min-width: 60em) {
-    grid-template-columns: repeat(10, 8vw);
-    grid-template-rows: 25vh;
-  }
-}
-
-img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  transition: all $time/2 ease(downhill);
-  position: relative;
-  box-shadow: 0 0 0 #0000;
-  opacity: 0.67;
-  filter: sepia(80%) hue-rotate(180deg);
-
-  &:first-child {
-    border-radius: 10px 10px 0 0;
-  }
-  &:last-child {
-    border-radius: 0 0 10px 10px;
-  }
-
-  @media (min-width: 40em) and (max-width: 59.99em) {
-    &:first-child {
-      border-radius: 10px 0 0 0;
-    }
-    &:nth-child(5) {
-      border-radius: 0 10px 0 0;
-    }
-    &:nth-child(6) {
-      border-radius: 0 0 10px 0;
-    }
-    &:last-child {
-      border-radius: 0 0 0 10px;
-    }
-  }
-
-  @media (min-width: 60em) {
-    &:first-child {
-      border-radius: 10px 0 0 10px;
-    }
-    &:last-child {
-      border-radius: 0 10px 10px 0;
-    }
-  }
-
-  &:hover {
-    opacity: 1;
-    z-index: 1;
-    box-shadow: 1em 1em 1em #0004;
-    transition: all $time ease(downhill);
-    filter: sepia(0%) hue-rotate(0deg);
-    border-radius: 5px;
-    width: 300%;
-    height: 300%;
-    left: -100%;
-    top: -100%;
-
-    @media (min-width: 40em) {
-      width: 250%;
-      height: 500%;
-      left: -75%;
-      top: -200%;
-    }
-    
-    @media (min-width: 10em) and (orientation: landscape) {
-      width: 250%;
-      height: 200%;
-    }
-       
-    @media (min-width: 40em) and (orientation: portrait) {
-      width: 300%;
-      height: 300%;
-      left: -100%;
-      top: -100%;
-    }
-
-    @media (min-width: 60em) {
-      width: 350%;
-      height: 150%;
-      left: -75%;
-      top: -25%;
-
-      ~ img {
-        left: 175%;
-      }
-    }
-
-    @media (min-width: 60em) and (orientation: landscape) {
-      width: 300%;
-      height: 300%;
-      left: -75%;
-      top: -100%;
-
-      ~ img {
-        left: 100%;
-      }
-    }
-  }
-}
