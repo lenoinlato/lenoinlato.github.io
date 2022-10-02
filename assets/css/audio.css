@@ -1,0 +1,276 @@
+
+
+
+/*--------------- projects section --------------- */
+h6 {
+    text-align: center;
+}
+
+.vertical {
+    margin-top: 40px;
+    border-left: 1px solid #fff;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+}
+
+.project {
+    height: 40vh;
+    width: 40vh;
+    transition: 0.3s;
+}
+
+.project:hover {
+    height: 45vh;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.heras {
+    background: url(https://i.imgur.com/89YLih5.jpeg) no-repeat 40% 40%;
+    background-size: cover;
+}
+
+.heras::after {
+    content: "HERAS";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 5%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+
+.foreva {
+    background: url(https://i.ibb.co/nwLHfp5/Forever-Together-Capa-WEB.jpg) no-repeat 40% 20%;
+    background-size: cover;
+    left: 0%
+}
+
+.foreva::after {
+    content: "FOREVER TOGETHER";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 8px;
+    font-weight: bold;
+    position: relative;
+    color: #000;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+
+
+
+.omoca {
+    background: url(https://i.ibb.co/7Vkx0hG/ab67616d0000b2739ecf35c8939cb9c53ce8867c.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.omoca::after {
+    font-size: 8px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 8%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+
+
+.mulherbeira {
+    background: url(https://comunidadeculturaearte.com/wp-content/uploads/2022/02/Cover_Mulher-Beira-600x600.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.mulherbeira::after {
+    font-size: 8px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 8%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+
+.losetofear {
+    background: url(https://i.ibb.co/2s31Ltz/CAPA-SINGLE-2-LOSE-TO-FEAR.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.losetofear::after {
+    content: "Lose To Fear";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 8%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+
+
+.ocorpo {
+    background: url(https://glam-magazine.pt/wp-content/uploads/2021/09/Image1-4.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.ocorpo::after {
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 8%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+
+
+
+.agirl {
+    background: url(https://i.ibb.co/DVp97Dy/wallpapernoletters.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.agirl::after {
+    content: "A. G. C. D.";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+
+
+
+
+.gretua2021 {
+    background: url(https://i1.sndcdn.com/artworks-rEBriQznpc2exygY-qzCywQ-t500x500.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.gretua2021::after {
+    content: "GrETUA - Editorial";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+}
+
+
+.bg-up {
+    background: url(https://i.ibb.co/kBG53Q2/imagem.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+
+
+
+.bg_album {
+    background: url(https://bangavenue.github.io/images/BG_Long_2.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.bg_album::after {
+    content: "ALBUM";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 5%;
+    bottom: 0;
+}
+
+
+.sotp {
+    background: url(https://e.snmc.io/i/600/s/01a43e22cf9916c27753befae919efdf/8517633/bang-avenue-sum-of-these-parts-cover-art.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.sotp::after {
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 5%;
+    bottom: 0;
+}
+
+
+
+
+.notanalbum {
+    background: url(https://i.ibb.co/0CvyS4p/imagem.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+
+
+.roam {
+    background: url(https://i1.sndcdn.com/artworks-hOjblSydys5ofq4f-DJqXZA-t500x500.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.roam::after {
+    content: "ROAM";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+}

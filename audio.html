@@ -10,7 +10,9 @@
 
       <!-- stylesheet -->
       <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/audiogallery.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/css/audio.css">
 
       <!-- bootstrap cdns -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -40,8 +42,13 @@
                   </span>
 
                   <ul id="menu">
+                        <style>
+                              .under {
+                                    text-decoration: underline;
+                              }
+                        </style>
                         <li><a href="index.html">home</a></li>
-                        <li><a href="">audio</a></li>
+                        <li><a class="under" href="">audio</a></li>
                         <li><a href="">video</a></li>
                         <li><a href="">about</a></li>
                         <li><a href="">let's talk</a></li>
@@ -65,27 +72,47 @@
             </div>
             <!--------------- navbar ends here --------------->
 
+            <!--------------- hero section starts here --------------> 
+            <div class="her" id="her">
+            </div>
+
+            <!--------------- hero section ends here --------------->
 
             <!--------------- content starts here --------------->
 
-            <div class="container">
+            <div class="container-fluid">
+                 <!--
+                  <div class="img-gallery">
+                        <a href="https://ibb.co/BGBBc0N">
+                              <img src="https://i.ibb.co/BGBBc0N/Capa-ALBUM-Digital-Art.jpg" alt="Capa-ALBUM-Digital-Art">
+                        </a>
+                        <a href="https://ibb.co/BGBBc0N"><img src="https://i.ibb.co/BGBBc0N/Capa-ALBUM-Digital-Art.jpg" alt="Capa-ALBUM-Digital-Art"></a>
+                        <a href="https://ibb.co/BGBBc0N"><img src="https://i.ibb.co/BGBBc0N/Capa-ALBUM-Digital-Art.jpg" alt="Capa-ALBUM-Digital-Art"></a>
+                        
+                  </div>
+                  -->
+                  <br><br><br>
+                  <h6>2022</h6>
                   <div class="row">
-
-                        <!-- Trigger the Modal -->
-                        <img id="myImg" src="img_snow.jpg" alt="Snow" style="width:100%;max-width:300px">
-
-                        <!-- The Modal -->
-                        <div id="myModal" class="modal">
-
-                              <!-- The Close Button -->
-                              <span class="close">&times;</span>
-
-                              <!-- Modal Content (The Image) -->
-                              <img class="modal-content" id="img01">
-
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                  </div> 
+                        <div class="col-lg-3 project bg_album" onclick="location.href='audio/bg_album.html'"></div>   
+                        <div class="col-lg-3 project omoca" onclick="location.href='video/omoca.html'"></div>
+                        <div class="col-lg-3 project losetofear" onclick="location.href='video/losetofear.html'"></div> 
+                        <div class="col-lg-3 project mulherbeira" onclick="location.href='audio/mulherbeira.html'"></div> 
+                  </div>
+                  <br>
+                  <h6>2021</h6>
+                  <div class="row">
+                        <div class="col-lg-4 project foreva" onclick="location.href='video/forevertogether.html'"></div>    
+                        <div class="col-lg-4 project ocorpo" onclick="location.href='audio/ocorpo.html'"></div>
+                        <div class="col-lg-4 project gretua2021" onclick="location.href='audio/gretua2021.html'"></div>
+                  </div>
+                  <br>
+                  <h6>2019-2020</h6>
+                  <div class="row">
+                        <div class="col-lg-3 project bg-up" onclick="location.href='audio/bg-up.html'"></div>    
+                        <div class="col-lg-3 project sotp" onclick="location.href='audio/sotp.html'"></div>
+                        <div class="col-lg-3 project notanalbum" onclick="location.href='audio/notanalbum.html'"></div>
+                        <div class="col-lg- project roam" onclick="location.href='audio/roam.html'"></div>
                   </div>
             </div>
 

@@ -121,6 +121,7 @@ nav #menu li a {
 
 nav #menu li a:hover {
       text-decoration: none;
+      text-decoration: underline;
 }
 
 #toggle {
@@ -228,6 +229,13 @@ nav #menu li a:hover {
       #resize {
             visibility: hidden !important;
       }
+}
+
+.her {
+      height: 5vh;
+      display: center;
+      align-items: center;
+      justify-content: center;
 }
 
 /*--------------- hero section --------------- */
