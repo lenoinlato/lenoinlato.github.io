@@ -17,11 +17,22 @@ h6 {
 .project {
     height: 22.5vh;
     width: 40vh;
+    transition: 0.3s;
 }
 
 .project:hover {
     cursor: pointer;
     transition: 0.3s;
+}
+
+
+@keyframes appearHere{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:100;
+    }
 }
 
 
@@ -49,10 +60,11 @@ h6 {
     bottom: 0;
 }
 
-/*  */
+
 .heras:hover{
     background: url(https://imgpile.com/images/TWmIOi.gif) no-repeat center;
     background-size: 45vh;
+    animation: appearHere 0.3s both;
 }
 .heras:hover::after{
     content: "HERAS | GrETUA";
@@ -87,16 +99,17 @@ h6 {
     bottom: 0;
 }
 .gretua2022:hover{
-    background: url(https://i.imgur.com/XzwUlaj.gif) no-repeat center;
-    background-size: 45vh;
-    
+    animation: appearHere 0.3s both;
+    background: #0f0f0f;
+    cursor: pointer; 
 }
 .gretua2022:hover::after{
+    content: "GrETUA | Editorial 2022";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
     writing-mode: horizontal-tb;
     font-size: 20px;
-    color: #0f0f0f;
+    color: #fff;
     text-align: center;
     top: 40%;
 }
@@ -127,6 +140,7 @@ h6 {
 .aetproj:hover{
     background: url(https://i.imgur.com/cD5A072.gif) no-repeat center;
     background-size: 45vh;
+    animation: appearHere 0.3s both;
     
 }
 .aetproj:hover::after{
@@ -163,17 +177,19 @@ h6 {
     bottom: 0;
 }
 .ouvidoria2022:hover{
-    background: url(https://i.ibb.co/JsVTddN/ouvidoria.gif) no-repeat center;
-    background-size: 45vh;
+   /* background: url(https://i.ibb.co/JsVTddN/ouvidoria.gif) no-repeat center;
+    background-size: 45vh; */
+    animation: appearHere 0.3s both;
+    background: #0f0f0f;
     
 }
 .ouvidoria2022:hover::after{
-    content: "";
+    content: "Ouvidoria na Noite Branca";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
     writing-mode: horizontal-tb;
     font-size: 20px;
-    color: #0f0f0f;
+    color: #fff;
     text-align: center;
     top: 40%;
 }
@@ -208,12 +224,12 @@ h6 {
     height: 250px;
 }
 .ftvideo:hover::after{
-    content: "";
+    content: "FOREVER TOGETHER";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
     writing-mode: horizontal-tb;
     font-size: 20px;
-    color: #0f0f0f;
+    color: #fff;
     text-align: center;
     top: 40%;
     height: 250px;
@@ -249,11 +265,12 @@ h6 {
     background: url(https://i.ibb.co/mDkphqd/agirl.gif) no-repeat center;
 }
 .agirl:hover::after{
+    content:"A Girl Called Depression";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
     writing-mode: horizontal-tb;
     font-size: 20px;
-    color: #0f0f0f;
+    color: #fff;
     text-align: center;
     top: 40%;
     height: 250px;

@@ -274,12 +274,12 @@ h6 {
 
 
 
-.bg_album {
+.bg-album {
     background: url(https://bangavenue.github.io/images/BG_Long_2.jpg) no-repeat 50% 50%;
     background-size: cover;
 }
 
-.bg_album::after {
+.bg-album::after {
     content: "ALBUM";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
@@ -296,7 +296,7 @@ h6 {
     bottom: 0;
 }
 
-.bg_album:hover::after{
+.bg-album:hover::after{
     content: "Bang Avenue - ALBUM";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
