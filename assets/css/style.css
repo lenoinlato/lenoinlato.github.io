@@ -352,6 +352,35 @@ nav #menu li a:hover {
       font-weight: lighter;
 }
 
+.info h4 a{
+      font-size: 18px;
+      color: white;
+      font-weight: lighter;
+}
+
+.info h4 a:hover {
+      color: tan;
+      cursor: pointer;
+      transition: 0.3s;
+}
+
+.info h2 {
+      font-size: 30px;
+      font-weight: lighter;
+}
+
+.info h2 a{
+      font-size: 30px;
+      color: white;
+      font-weight: lighter;
+}
+
+.info h2 a:hover {
+      color: tan;
+      cursor: pointer;
+      transition: 0.3s;
+}
+
 .info p {
       color: grey;
       font-weight: lighter;
@@ -456,15 +485,36 @@ nav #menu li a:hover {
       font-size: 15px;
       color: grey;
       margin-top: 10%;
+      text-align: right;
+}
+
+.hero-content h3 {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.85);
+      text-align: right;
 }
 
 .hero-content h6 {
-      text-align: left;
+      text-align: right;
+      font-weight: bold;
+}
+
+.hero-content a {
+      float: right;
+      margin-right: 2%;
+      color: white;
+}
+
+.hero-content a:hover {
+      cursor: pointer;
+      transition: 0.2s;
+      color: tan;
 }
 
 .hero-content h1 {
       font-style: italic;
 }
+
 
 @media(max-width: 768px) {
       .hero-content {
@@ -604,4 +654,208 @@ textarea:focus {
 
     }
 
+/* non selectable */
+
+.unselectable {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+}
+
+
+
+/* animations */
+
+.appearHERE{
+      -webkit-animation: fadeIn 1.2s both;
+      -moz-animation: fadeIn 1.2s both;
+      -o-animation: fadeIn 1.2s both;
+      animation: fadeIn 1.2s both;
+}
+  
+  @-webkit-keyframes fadeIn {
+      0%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+  }
+  
+  @-moz-keyframes fadeIn {
+      0%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+  }
+  
+  @-o-keyframes fadeIn {
+      0%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+  }
+  
+  @keyframes fadeIn {
+      0%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+  }
+
+  .appearLONG{
+      -webkit-animation: fadeIn 3s both;
+      -moz-animation: fadeIn 3s both;
+      -o-animation: fadeIn 3s both;
+      animation: fadeIn 3s both;
+}
+  
+  @-webkit-keyframes fadeIn {
+      0%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+  }
+  
+  @-moz-keyframes fadeIn {
+      0%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+  }
+  
+  @-o-keyframes fadeIn {
+      0%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+  }
+  
+  @keyframes fadeIn {
+      0%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+  }
+
+.fadeInLeft{
+      -webkit-animation: fadeInLeft 1.2s both;
+      -moz-animation: fadeInLeft 1.2s both;
+      -o-animation: fadeInLeft 1.2s both;
+      animation: fadeInLeft 1.2s both;
+  }
+  
+  @-webkit-keyframes fadeInLeft {
+      0%{
+          opacity: 0;
+          -webkit-transform: translateX(-50px);
+      }
+      100%{
+          opacity: 1;
+          -webkit-transform: translateX(0px);
+      }
+  }
+  
+  @-moz-keyframes fadeInLeft {
+      0%{
+          opacity: 0;
+          -moz-transform: translateX(-50px);
+      }
+      100%{
+          opacity: 1;
+          -moz-transform: translateX(0px);
+      }
+  }
+  
+  @-o-keyframes fadeInLeft {
+      0%{
+          opacity: 0;
+          -o-transform: translateX(-50px);
+      }
+      100%{
+          opacity: 1;
+          -o-transform: translateX(0px);
+      }
+  }
+  
+  @keyframes fadeInLeft {
+      0%{
+          opacity: 0;
+          transform: translateX(-50px);
+      }
+      100%{
+          opacity: 1;
+          transform: translateX(0px);
+      }
+  }
+
+
+
+  .fadeInRight{
+      -webkit-animation: fadeInRight 1.2s both;
+      -moz-animation: fadeInRight 1.2s both;
+      -o-animation: fadeInRight 1.2s both;
+      animation: fadeInRight 1.2s both;
+  }
+  
+  @-webkit-keyframes fadeInRight{ 
+      0%{
+          opacity: 0;
+          -webkit-transform: translateX(50px);
+      }
+      100%{
+          opacity: 1;
+          -webkit-transform: translateX(0px);
+      }
+  }
+  
+  @-moz-keyframes fadeInRight{ 
+      0%{
+          opacity: 0;
+          -moz-transform: translateX(50px);
+      }
+      100%{
+          opacity: 1;
+          -moz-transform: translateX(0px);
+      }
+  }
+  
+  @-o-keyframes fadeInRight{ 
+      0%{
+          opacity: 0;
+          -o-transform: translateX(50px);
+      }
+      100%{
+          opacity: 1;
+          -o-transform: translateX(0px);
+      }
+  }
+  
+  @keyframes fadeInRight{ 
+      0%{
+          opacity: 0;
+          transform: translateX(50px);
+      }
+      100%{
+          opacity: 1;
+          transform: translateX(0px);
+      }
+  }
 

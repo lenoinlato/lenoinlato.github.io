@@ -21,32 +21,18 @@ h6 {
 }
 
 .project:hover {
-    height: 45vh;
+    animation: appearHere 0.3s both;
+    background: #0f0f0f;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-
-.heras {
-    background: url(https://i.imgur.com/89YLih5.jpeg) no-repeat 40% 40%;
-    background-size: cover;
-}
-
-.heras::after {
-    content: "HERAS";
-    font-family: 'Kantumruy Pro', sans-serif;
-    font-style: italic;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    font-size: 16px;
-    font-weight: bold;
-    position: relative;
-    color: #fff;
-    display: block;
-    top: 5%;
-    left: 0%;
-    right: 0%;
-    bottom: 0;
+@keyframes appearHere{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:100;
+    }
 }
 
 .foreva {
@@ -71,7 +57,16 @@ h6 {
     right: 0%;
     bottom: 0;
 }
-
+.foreva:hover::after{
+    content: "Bang Avenue - Forever Together";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 40%;
+}
 
 
 .omoca {
@@ -91,6 +86,19 @@ h6 {
     bottom: 0;
 }
 
+.omoca:hover::after{
+    content: "O Marta - Ó Moça, É Folclore";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 40%;
+    transition: 0.3s;
+
+}
+
 
 .mulherbeira {
     background: url(https://comunidadeculturaearte.com/wp-content/uploads/2022/02/Cover_Mulher-Beira-600x600.jpg) no-repeat 50% 50%;
@@ -107,6 +115,16 @@ h6 {
     left: 0%;
     right: 0%;
     bottom: 0;
+}
+.mulherbeira:hover::after{
+    content: "O Marta - Mulher Beirã";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 40%;
 }
 
 .losetofear {
@@ -130,6 +148,16 @@ h6 {
     right: 0%;
     bottom: 0;
 }
+.losetofear:hover::after{
+    content: "Bang Avenue - Lose To Fear";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 40%;
+}
 
 
 .ocorpo {
@@ -146,15 +174,24 @@ h6 {
     right: 0%;
     bottom: 0;
 }
+.ocorpo:hover::after{
+    content: "O Marta - Quando o corpo não te convém";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 40%;
+}
 
 
-
-.agirl {
+.agcd {
     background: url(https://i.ibb.co/DVp97Dy/wallpapernoletters.jpg) no-repeat 50% 50%;
     background-size: cover;
 }
 
-.agirl::after {
+.agcd::after {
     content: "A. G. C. D.";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
@@ -170,7 +207,16 @@ h6 {
     right: 0%;
     bottom: 0;
 }
-
+.agcd:hover::after{
+    content: "Bang Avenue - A Girl Called Depression";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 40%;
+}
 
 
 
@@ -195,13 +241,36 @@ h6 {
     right: 5%;
     bottom: 0;
 }
+.gretua2021:hover::after{
+    content: "GrETUA | Editorial 2021";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 40%;
+}
 
 
 .bg-up {
     background: url(https://i.ibb.co/kBG53Q2/imagem.png) no-repeat 50% 50%;
     background-size: cover;
 }
-
+.bg-up:hover::after{
+    content: "Bang Avenue - Up";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    color: #fff;
+    text-align: center;
+    top: 40%;
+}
 
 
 
@@ -227,12 +296,21 @@ h6 {
     bottom: 0;
 }
 
+.bg_album:hover::after{
+    content: "Bang Avenue - ALBUM";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    text-align: center;
+    top: 40%;
+}
+
 
 .sotp {
     background: url(https://e.snmc.io/i/600/s/01a43e22cf9916c27753befae919efdf/8517633/bang-avenue-sum-of-these-parts-cover-art.jpg) no-repeat 50% 50%;
     background-size: cover;
 }
-
 .sotp::after {
     position: relative;
     color: #fff;
@@ -242,6 +320,21 @@ h6 {
     right: 5%;
     bottom: 0;
 }
+.sotp:hover::after{
+    content: "Bang Avenue - Sum Of These Parts";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    color: #fff;
+    text-align: center;
+    top: 40%;
+}
+
 
 
 
@@ -250,7 +343,20 @@ h6 {
     background: url(https://i.ibb.co/0CvyS4p/imagem.png) no-repeat 50% 50%;
     background-size: cover;
 }
-
+.notanalbum:hover::after{
+    content: "Bang Avenue - Not An Album";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    color: #fff;
+    text-align: center;
+    top: 40%;
+}
 
 
 .roam {
@@ -273,4 +379,18 @@ h6 {
     left: 5%;
     right: 5%;
     bottom: 0;
+}
+.roam:hover::after{
+    content: "ROAM";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    color: #fff;
+    text-align: center;
+    top: 40%;
 }

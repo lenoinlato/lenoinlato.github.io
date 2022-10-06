@@ -1,0 +1,300 @@
+
+
+
+/*--------------- projects section --------------- */
+h6 {
+    text-align: center;
+}
+
+.vertical {
+    margin-top: 40px;
+    border-left: 1px solid #fff;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+}
+
+.project {
+    height: 22.5vh;
+    width: 40vh;
+}
+
+.project:hover {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+
+.heras {
+    background: url(https://i.imgur.com/89YLih5.jpeg) no-repeat 40% 20%;
+    background-size: cover;
+    left: 0%
+}
+.heras::after {
+    content: "HERAS";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 5%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+
+/*  */
+.heras:hover{
+    background: url(https://imgpile.com/images/TWmIOi.gif) no-repeat center;
+    background-size: 45vh;
+}
+.heras:hover::after{
+    content: "HERAS | GrETUA";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 40%;
+}
+
+
+.gretua2022 {
+    background: url(https://i.ibb.co/FBTS6ym/fa47131ebe95be98701b5a27ad4ecd8c59b2cf229b748d42016603ff0ac7e53f.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    left: 0%;
+}
+.gretua2022::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 8%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+.gretua2022:hover{
+    background: url(https://i.imgur.com/XzwUlaj.gif) no-repeat center;
+    background-size: 45vh;
+    
+}
+.gretua2022:hover::after{
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: #0f0f0f;
+    text-align: center;
+    top: 40%;
+}
+
+
+
+
+.aetproj {
+    background: url(https://i.ibb.co/MnPRPYc/Sem-Ti-tulo-1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+
+}
+.aetproj::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+.aetproj:hover{
+    background: url(https://i.imgur.com/cD5A072.gif) no-repeat center;
+    background-size: 45vh;
+    
+}
+.aetproj:hover::after{
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: #0f0f0f;
+    text-align: center;
+    top: 40%;
+}
+
+
+
+.ouvidoria2022 {
+    background: url(https://i.ibb.co/qCQ07cf/ouvidoria1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+
+}
+.ouvidoria2022::after {
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+.ouvidoria2022:hover{
+    background: url(https://i.ibb.co/JsVTddN/ouvidoria.gif) no-repeat center;
+    background-size: 45vh;
+    
+}
+.ouvidoria2022:hover::after{
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: #0f0f0f;
+    text-align: center;
+    top: 40%;
+}
+
+
+/* Forever Together */
+.ftvideo {
+    background: url(https://i.ibb.co/W2dSjmv/coise.jpg) no-repeat 50% 10%;
+    background-size: cover;
+    height: 250px;
+
+}
+.ftvideo::after {
+    content: "FOREVER TOGETHER";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    height: 250px;
+}
+.ftvideo:hover{
+    background: url(https://i.ibb.co/DpcW2HF/id3.gif) no-repeat center;
+    height: 250px;
+}
+.ftvideo:hover::after{
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: #0f0f0f;
+    text-align: center;
+    top: 40%;
+    height: 250px;
+}
+
+
+
+
+/* agirl */
+.agirl {
+    background: url(https://i.ibb.co/DVp97Dy/wallpapernoletters.jpg) no-repeat 50% 10%;
+    background-size: cover;
+    height: 250px;
+
+}
+.agirl::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    height: 250px;
+}
+.agirl:hover{
+    background: url(https://i.ibb.co/mDkphqd/agirl.gif) no-repeat center;
+}
+.agirl:hover::after{
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: #0f0f0f;
+    text-align: center;
+    top: 40%;
+    height: 250px;
+}
+
+
+
+/* deti4devs */
+.deti4devs {
+    background: url(https://i.imgur.com/x9mi8Nx.jpeg) no-repeat 50% 10%;
+    background-size: cover;
+    height: 250px;
+
+}
+.deti4devs::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    height: 250px;
+}
+.deti4devs:hover{
+    background: url(https://i.ibb.co/qdmg68C/deti4devs.gif) no-repeat center;
+}
+.deti4devs:hover::after{
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: #0f0f0f;
+    text-align: center;
+    top: 40%;
+    height: 250px;
+}
+
