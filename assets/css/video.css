@@ -115,6 +115,41 @@ h6 {
 }
 
 
+.porta253 {
+    background: url(https://i.ytimg.com/vi/EgsTRinsB48/maxresdefault.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    left: 0%;
+}
+.porta253::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 8%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+.porta253:hover{
+    animation: appearHere 0.3s both;
+    background: #0f0f0f;
+    cursor: pointer; 
+}
+.porta253:hover::after{
+    content: "Porta 253";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    top: 40%;
+}
 
 
 .aetproj {
