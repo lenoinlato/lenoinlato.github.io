@@ -499,6 +499,12 @@ nav #menu li a:hover {
       font-weight: bold;
 }
 
+.hero-content h7 {
+      text-align: left;
+      color:tan;
+      font-weight: bold;
+}
+
 .hero-content a {
       float: right;
       margin-right: 2%;
