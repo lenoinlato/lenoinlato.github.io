@@ -100,6 +100,40 @@ h6 {
 }
 
 
+
+.fadoportuguesa {
+    background: url(https://comunidadeculturaearte.com/wp-content/uploads/2022/11/Marta-e1669377707840.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.fadoportuguesa::after {
+    font-size: 8px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 8%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+
+.fadoportuguesa:hover::after{
+    content: "O Marta - Fado à Portuguesa";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 40%;
+    transition: 0.3s;
+
+}
+
+
+
+
 .mulherbeira {
     background: url(https://comunidadeculturaearte.com/wp-content/uploads/2022/02/Cover_Mulher-Beira-600x600.jpg) no-repeat 50% 50%;
     background-size: cover;
