@@ -41,7 +41,7 @@ h6 {
 .heras {
     background: url(https://i.imgur.com/89YLih5.jpeg) no-repeat 40% 20%;
     background-size: cover;
-    left: 0%
+    height: 250px;
 }
 .heras::after {
     content: "HERAS";
@@ -58,11 +58,12 @@ h6 {
     left: 0%;
     right: 0%;
     bottom: 0;
+    height: 250px;
 }
 
 
 .heras:hover{
-    background: url(https://imgpile.com/images/TWmIOi.gif) no-repeat center;
+    background: url('../video/heras/heras.gif') no-repeat center;
     background-size: 45vh;
     animation: appearHere 0.3s both;
 }
@@ -81,7 +82,7 @@ h6 {
 .gretua2022 {
     background: url(https://i.ibb.co/FBTS6ym/fa47131ebe95be98701b5a27ad4ecd8c59b2cf229b748d42016603ff0ac7e53f.jpg) no-repeat 50% 50%;
     background-size: cover;
-    left: 0%;
+    height: 250px;
 }
 .gretua2022::after {
     font-family: 'Kantumruy Pro', sans-serif;
@@ -97,6 +98,7 @@ h6 {
     left: 0%;
     right: 0%;
     bottom: 0;
+    height: 250px;
 }
 .gretua2022:hover{
     animation: appearHere 0.3s both;
@@ -118,7 +120,7 @@ h6 {
 .porta253 {
     background: url(https://i.ytimg.com/vi/EgsTRinsB48/maxresdefault.jpg) no-repeat 50% 50%;
     background-size: cover;
-    left: 0%;
+    height: 250px;
 }
 .porta253::after {
     font-family: 'Kantumruy Pro', sans-serif;
@@ -130,10 +132,11 @@ h6 {
     position: relative;
     color: #0f0f0f;
     display: block;
-    top: 8%;
+    top: 10%;
     left: 0%;
     right: 0%;
     bottom: 0;
+    height: 250px;
 }
 .porta253:hover{
     animation: appearHere 0.3s both;
@@ -155,7 +158,7 @@ h6 {
 .aetproj {
     background: url(https://i.ibb.co/MnPRPYc/Sem-Ti-tulo-1.jpg) no-repeat 50% 50%;
     background-size: cover;
-
+    height: 250px;
 }
 .aetproj::after {
     font-family: 'Kantumruy Pro', sans-serif;
@@ -171,6 +174,7 @@ h6 {
     left: 0%;
     right: 0%;
     bottom: 0;
+    height: 250px;
 }
 .aetproj:hover{
     background: url(https://i.imgur.com/cD5A072.gif) no-repeat center;
@@ -193,7 +197,7 @@ h6 {
 .ouvidoria2022 {
     background: url(https://i.ibb.co/qCQ07cf/ouvidoria1.jpg) no-repeat 50% 50%;
     background-size: cover;
-
+    height: 250px;
 }
 .ouvidoria2022::after {
     content: "";
@@ -210,6 +214,7 @@ h6 {
     left: 0%;
     right: 0%;
     bottom: 0;
+    height: 250px;
 }
 .ouvidoria2022:hover{
    /* background: url(https://i.ibb.co/JsVTddN/ouvidoria.gif) no-repeat center;
