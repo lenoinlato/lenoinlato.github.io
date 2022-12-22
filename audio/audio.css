@@ -35,6 +35,40 @@ h6 {
     }
 }
 
+/*MARIANO*/
+.mariano {
+    background: url(assets/mariano.jpg) no-repeat 40% 20%;
+    background-size: cover;
+    left: 0%
+}
+
+.mariano::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 8px;
+    font-weight: bold;
+    position: relative;
+    color: #000;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+.mariano:hover::after{
+    content: "Louis G - A Mariano";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 45%;
+}
+
+
 .foreva {
     background: url(assets/foreva.jpg) no-repeat 40% 20%;
     background-size: cover;
@@ -65,7 +99,7 @@ h6 {
     font-size: 20px;
     color: white;
     text-align: center;
-    top: 40%;
+    top: 45%;
 }
 
 
@@ -94,7 +128,7 @@ h6 {
     font-size: 20px;
     color: white;
     text-align: center;
-    top: 40%;
+    top: 45%;
     transition: 0.3s;
 
 }
@@ -126,7 +160,7 @@ h6 {
     font-size: 20px;
     color: white;
     text-align: center;
-    top: 40%;
+    top: 45%;
     transition: 0.3s;
 
 }
@@ -158,7 +192,7 @@ h6 {
     font-size: 20px;
     color: white;
     text-align: center;
-    top: 40%;
+    top: 45%;
 }
 
 .losetofear {
@@ -190,7 +224,7 @@ h6 {
     font-size: 20px;
     color: white;
     text-align: center;
-    top: 40%;
+    top: 45%;
 }
 
 
@@ -216,7 +250,7 @@ h6 {
     font-size: 20px;
     color: white;
     text-align: center;
-    top: 40%;
+    top: 45%;
 }
 
 
@@ -249,7 +283,7 @@ h6 {
     font-size: 20px;
     color: white;
     text-align: center;
-    top: 40%;
+    top: 45%;
 }
 
 
@@ -283,7 +317,7 @@ h6 {
     font-size: 20px;
     color: white;
     text-align: center;
-    top: 40%;
+    top: 45%;
 }
 
 
@@ -303,7 +337,7 @@ h6 {
     display: block;
     color: #fff;
     text-align: center;
-    top: 40%;
+    top: 45%;
 }
 
 
@@ -337,7 +371,7 @@ h6 {
     writing-mode: horizontal-tb;
     font-size: 20px;
     text-align: center;
-    top: 40%;
+    top: 45%;
 }
 
 
@@ -366,7 +400,7 @@ h6 {
     display: block;
     color: #fff;
     text-align: center;
-    top: 40%;
+    top: 45%;
 }
 
 
@@ -389,7 +423,7 @@ h6 {
     display: block;
     color: #fff;
     text-align: center;
-    top: 40%;
+    top: 45%;
 }
 
 
@@ -426,5 +460,5 @@ h6 {
     display: block;
     color: #fff;
     text-align: center;
-    top: 40%;
+    top: 45%;
 }
