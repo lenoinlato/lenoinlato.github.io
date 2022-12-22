@@ -1,0 +1,382 @@
+
+
+
+/*--------------- projects section --------------- */
+h6 {
+    text-align: center;
+}
+
+.vertical {
+    margin-top: 40px;
+    border-left: 1px solid #fff;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+}
+
+.project {
+    height: 35vh;
+    width: 40vh;
+    transition: 0.3s;
+}
+
+.project:hover {
+    cursor: pointer;
+    transition: 0.35s;
+    background-size: 45vh;
+}
+
+
+@keyframes appearHere{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:100;
+    }
+}
+
+
+
+
+.heras {
+    background: url(assets/heras.jpeg) no-repeat 40% 20%;
+    background-size: cover;
+}
+.heras::after {
+    content: "HERAS";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 2%;
+    right: 0%;
+    bottom: 0;
+
+}
+.heras:hover{
+    background: url(assets/heras.gif) no-repeat center;
+    animation: appearHere 0.3s both;
+    background-size: 42vh;
+}
+.heras:hover::after{
+    content: "HERAS | GrETUA";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 85%;
+}
+
+
+.gretua2022 {
+    background: url(assets/gretua2022.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+.gretua2022::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 8%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+.gretua2022:hover{
+    background: url(assets/gretua2022.gif) no-repeat center;
+    animation: appearHere 0.3s both;
+    background-size: 42vh;
+}
+.gretua2022:hover::after{
+    content: "GrETUA | Editorial 2022";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    top: 85%;
+}
+
+
+.porta253 {
+    background: url(assets/porta253.jpeg) no-repeat 40% 20%;
+    background-size: cover;
+}
+.porta253::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 2%;
+    right: 0%;
+    bottom: 0;
+}
+.porta253:hover{
+    background: url(assets/porta253.gif) no-repeat center;
+    animation: appearHere 0.3s both;
+
+}
+.porta253:hover::after{
+    content: "PORTA 253";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 85%;
+}
+
+
+.aetproj {
+    background: url(assets/aetproj.jpg) no-repeat 40% 20%;
+    background-size: cover;
+}
+.aetproj::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 2%;
+    right: 0%;
+    bottom: 0;
+}
+.aetproj:hover{
+    background: url(assets/aetproj.gif) no-repeat center;
+    animation: appearHere 0.3s both;
+    background-size: 42vh;
+}
+.aetproj:hover::after{
+    content: "AET - Projeto Educativo";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 85%;
+}
+
+
+
+.ouvidoria2022 {
+    background: url(https://i.ibb.co/qCQ07cf/ouvidoria1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+.ouvidoria2022::after {
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+.ouvidoria2022:hover{
+   /* background: url(https://i.ibb.co/JsVTddN/ouvidoria.gif) no-repeat center;
+    background-size: 45vh; */
+    animation: appearHere 0.3s both;
+    background: #0f0f0f;
+    
+}
+.ouvidoria2022:hover::after{
+    content: "Ouvidoria na Noite Branca";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    top: 40%;
+}
+
+
+/* Forever Together */
+.ftvideo {
+    background: url(assets/ftvideo.jpg) no-repeat 40% 20%;
+    background-size: cover;
+}
+.ftvideo::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 2%;
+    right: 0%;
+    bottom: 0;
+}
+.ftvideo:hover{
+    background: url(assets/ftvideo.gif) no-repeat center;
+    animation: appearHere 0.3s both;
+    background-size: 42vh;
+}
+.ftvideo:hover::after{
+    content: "BANG AVENUE - FOREVER TOGETHER";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    top: 85%;
+}
+
+
+
+.ltfvideo {
+    background: url(assets/ltfvideo.jpg) no-repeat 40% 20%;
+    background-size: cover;
+}
+.ltfvideo::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 2%;
+    right: 0%;
+    bottom: 0;
+}
+.ltfvideo:hover{
+    background: url(assets/ltfvideo.gif) no-repeat center;
+    animation: appearHere 0.3s both;
+    background-size: 42vh;
+}
+.ltfvideo:hover::after{
+    content: "BANG AVENUE - FOREVER TOGETHER";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    top: 85%;
+}
+
+
+
+
+/* agirl */
+.agirl {
+    background: url(assets/agirl.jpg) no-repeat 50% 10%;
+    background-size: cover;
+    height: 250px;
+
+}
+.agirl::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    height: 250px;
+}
+.agirl:hover{
+    background: url(assets/agirl.gif) no-repeat center;
+    background-size: 42vh;
+}
+.agirl:hover::after{
+    content:"BANG AVENUE - A Girl Called Depression";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    top: 88%;
+}
+
+
+
+/* deti4devs */
+.deti4devs {
+    background: url(assets/deti4devs.jpeg) no-repeat 50% 10%;
+    background-size: cover;
+    height: 250px;
+
+}
+.deti4devs::after {
+    content:"DETI4devs";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    height: 250px;
+}
+.deti4devs:hover{
+    background: url(assets/deti4devs.gif) no-repeat center;
+    background-size: 42vh;
+}
+.deti4devs:hover::after{
+    content:"DETI4devs";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: #0f0f0f;
+    text-align: center;
+    top: 88%;
+}
+
