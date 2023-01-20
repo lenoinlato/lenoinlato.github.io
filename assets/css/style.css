@@ -536,9 +536,22 @@ nav #menu li a:hover {
       height: 500px;
       margin-top: 120px;
 }
+.about h6 {
+      font-size: 3vh;
+      color: rgba(255, 255, 255, 0.85);
+      text-align: left;
+      font-style: italic;
+}
 
 .image {
-      background: url(https://images.unsplash.com/photo-1540885762261-a2ca01f290f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2468&q=80) no-repeat 50% 70%;
+      background: url(https://i.ibb.co/d2QZJdh/fujilo.jpg) no-repeat 50% 70%;
+      height: 20vh;
+      background-size: cover;
+}
+
+.otherimage {
+      background: url(https://i.ibb.co/1rLz4xs/leogif.gif) no-repeat 50% 70%;
+      height: 30vh;
 }
 
 /*--------------- contact form --------------- */
