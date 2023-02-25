@@ -379,3 +379,41 @@ h6 {
     top: 88%;
 }
 
+/* Web - more than you */
+.morethanyou {
+    background: url(assets/morethanyou.jpg) no-repeat 50% 10%;
+    background-size: cover;
+    height: 250px;
+
+}
+.morethanyou::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    height: 250px;
+}
+.morethanyou:hover{
+    background: url(assets/morethanyou.jpg) no-repeat 50% 10%;
+    animation: appearHere 0.3s both;
+    background-size: 45vh;
+}
+.morethanyou:hover::after{
+    content:"Web // More Than You";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 2.2vh;
+    color: white;
+    text-align: center;
+    top: 88%;
+}
