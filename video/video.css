@@ -417,3 +417,43 @@ h6 {
     text-align: center;
     top: 88%;
 }
+
+
+/* Recital Composição - Marco 2023 */
+.recital-marco2023 {
+    background: url(https://i.ibb.co/Jj01pmg/SCR-20230315-mqw.jpg) no-repeat 50% 10%;
+    background-size: cover;
+    height: 250px;
+
+}
+.recital-marco2023::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    height: 250px;
+}
+.recital-marco2023:hover{
+    background: url(https://i.ibb.co/Jj01pmg/SCR-20230315-mqw.jpg) no-repeat 50% 10%;
+    animation: appearHere 0.3s both;
+    background-size: 45vh;
+}
+.recital-marco2023:hover::after{
+    content:"Recital de Composição - Março 2023";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 2.2vh;
+    color: white;
+    text-align: center;
+    top: 88%;
+}
