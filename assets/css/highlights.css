@@ -59,7 +59,27 @@ h6 {
 }
 
 
-
+/* Web - more than you */
+.morethanyou {
+    background: url(covers/morethanyou.jpg) no-repeat 50% 10%;
+    background-size: cover;
+}
+.morethanyou::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    height: 250px;
+}
 
 
 .heras {
