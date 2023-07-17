@@ -383,7 +383,6 @@ h6 {
 .morethanyou {
     background: url(assets/morethanyou.jpg) no-repeat 50% 10%;
     background-size: cover;
-    height: 250px;
 
 }
 .morethanyou::after {
@@ -405,17 +404,17 @@ h6 {
 .morethanyou:hover{
     background: url(assets/morethanyou.jpg) no-repeat 50% 10%;
     animation: appearHere 0.3s both;
-    background-size: 45vh;
+    background-size: cover;
 }
 .morethanyou:hover::after{
     content:"Web // More Than You";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
     writing-mode: horizontal-tb;
-    font-size: 2.2vh;
+    font-size: 20px;
     color: white;
     text-align: center;
-    top: 88%;
+    top: 45%;
 }
 
 
@@ -423,7 +422,6 @@ h6 {
 .recital-marco2023 {
     background: url(https://i.ibb.co/Jj01pmg/SCR-20230315-mqw.jpg) no-repeat 50% 10%;
     background-size: cover;
-    height: 250px;
 
 }
 .recital-marco2023::after {
@@ -440,20 +438,57 @@ h6 {
     left: 0%;
     right: 0%;
     bottom: 0;
-    height: 250px;
 }
 .recital-marco2023:hover{
     background: url(https://i.ibb.co/Jj01pmg/SCR-20230315-mqw.jpg) no-repeat 50% 10%;
     animation: appearHere 0.3s both;
-    background-size: 45vh;
+    background-size: cover;
 }
 .recital-marco2023:hover::after{
-    content:"Recital de Composição - Março 2023";
+    content: "Recital de Composição - Março 2023";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
     writing-mode: horizontal-tb;
-    font-size: 2.2vh;
+    font-size: 20px;
     color: white;
     text-align: center;
-    top: 88%;
+    top: 45%;
+}
+
+
+/* Fra Ensemble */
+.fraensemble-teaser {
+    background: url(assets/fraensemble-teaser.jpeg) no-repeat 50% 10%;
+    background-size: cover;
+
+}
+.fraensemble-teaser::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+.fraensemble-teaser:hover{
+    background: url(assets/fraensemble-teaser.jpeg) no-repeat 50% 10%;
+    animation: appearHere 0.3s both;
+    background-size: cover;
+}
+.fraensemble-teaser:hover::after{
+    content: "Fra Ensemble";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 45%;
 }
