@@ -393,7 +393,7 @@ h6 {
     font-size: 15px;
     font-weight: bold;
     position: relative;
-    color: #fff;
+    color: #0f0f0f;
     display: block;
     top: 10%;
     left: 0%;
@@ -412,7 +412,7 @@ h6 {
     font-style: italic;
     writing-mode: horizontal-tb;
     font-size: 20px;
-    color: white;
+    color: #0f0f0f;
     text-align: center;
     top: 45%;
 }
