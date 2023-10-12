@@ -511,7 +511,7 @@ h6 {
 }
 
 .passinggaps::after {
-    content: "PASSING GAPS - A Sonic Installation";
+    content: "";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
     writing-mode: vertical-rl;

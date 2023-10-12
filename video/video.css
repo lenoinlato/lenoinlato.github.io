@@ -491,3 +491,79 @@ h6 {
     text-align: center;
     top: 45%;
 }
+
+/* posfacio */
+.posfacio {
+    background: url(assets/posfacio.jpeg) no-repeat 50% 10%;
+    background-size: cover;
+
+}
+.posfacio::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+.posfacio:hover{
+    background: url(assets/posfacio.jpeg) no-repeat 50% 10%;
+    animation: appearHere 0.3s both;
+    background-size: cover;
+}
+.posfacio:hover::after{
+    content: "Posfácio";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 45%;
+}
+
+
+
+/* Rapaz */
+.rapaz {
+    background: url(assets/rapaz/2.jpg) no-repeat 50% 10%;
+    background-size: cover;
+
+}
+.rapaz::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+}
+.rapaz:hover{
+    background: url(assets/rapaz/2.jpg) no-repeat 50% 10%;
+    animation: appearHere 0.3s both;
+    background-size: cover;
+}
+.rapaz:hover::after{
+    content: "O Marta - Rapaz";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 45%;
+}
