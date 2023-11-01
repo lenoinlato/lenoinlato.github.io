@@ -18,6 +18,7 @@ h6 {
     height: 35vh;
     width: 40vh;
     transition: 0.3s;
+    animation: goback 0.3s both;
 }
 
 .project:hover {
@@ -26,13 +27,27 @@ h6 {
     background-size: 45vh;
 }
 
+.project:hover::after {
+    background-color: #0f0f0f;
+}
+
 
 @keyframes appearHere{
     0%{
-        opacity:0;
+
     }
     100%{
-        opacity:100;
+        height: 39vh; 
+    }
+}
+
+@keyframes goback{
+    0%{
+
+        height: 39vh;
+    }
+    100%{
+
     }
 }
 
@@ -398,12 +413,12 @@ h6 {
     left: 0%;
     right: 0%;
     bottom: 0;
-    height: 250px;
 }
 .morethanyou:hover{
     background: url(assets/morethanyou.jpg) no-repeat 50% 10%;
     animation: appearHere 0.3s both;
     background-size: cover;
+    
 }
 .morethanyou:hover::after{
     content:"Web // More Than You";
@@ -411,7 +426,7 @@ h6 {
     font-style: italic;
     writing-mode: horizontal-tb;
     font-size: 20px;
-    color: #0f0f0f;
+    color: #fff;
     text-align: center;
     top: 45%;
 }
@@ -535,6 +550,7 @@ h6 {
 .rapaz {
     background: url(assets/rapaz/2.jpg) no-repeat 50% 10%;
     background-size: cover;
+    
 
 }
 .rapaz::after {
@@ -567,5 +583,6 @@ h6 {
     text-align: center;
     top: 45%;
 }
+
 
 

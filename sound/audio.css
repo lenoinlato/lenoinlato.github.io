@@ -467,12 +467,12 @@ h6 {
 
 
 .lavaavalaalva {
-    background: url(assets/lavavala_cartaz.jpg) no-repeat 50% 50%;
+    background: url(https://i.ibb.co/8zFBfNQ/SCR-20231031-v6t.jpg) no-repeat 50% 50%;
     background-size: cover;
 }
 
 .lavaavalaalva::after {
-    content: "Lava a Vala Alva";
+    content: "";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
     writing-mode: vertical-rl;

@@ -127,27 +127,30 @@ h6 {
     bottom: 0;
 }
 
-.omoca {
-    background: url(covers/omoca.jpg) no-repeat 50% 50%;
+/* Rapaz */
+.rapaz {
+    background: url(covers/marta.jpeg) no-repeat 50% 10%;
     background-size: cover;
-}
+    
 
-.omoca::after {
-    content: " Ó Moça, É Folclore! ";
+}
+.rapaz::after {
+    content: "RAPAZ";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 8px;
+    font-size: 16px;
     font-weight: bold;
     position: relative;
-    color: #0f0f0f;
+    color: #fff;
     display: block;
-    top: 8%;
+    top: 5%;
     left: 0%;
     right: 0%;
     bottom: 0;
 }
+
 
 .deti4devs {
     background: url(https://i.imgur.com/x9mi8Nx.jpeg) no-repeat 60% 50%;
@@ -218,6 +221,50 @@ h6 {
 }
 
 
+.fadodecoimbra {
+    background: url(covers/fadodecoimbra.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.fadodecoimbra::after {
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 1.6vh;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 5%;
+    bottom: 0;
+}
+
+
+.passinggaps {
+    background: url(covers/passinggaps.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.passinggaps::after {
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 1.6vh;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 5%;
+    bottom: 0;
+}
 
 
 /*--------------- gallery --------------- */
