@@ -376,7 +376,7 @@ h6 {
 
 
 .sotp {
-    background: url(https://e.snmc.io/i/600/s/01a43e22cf9916c27753befae919efdf/8517633/bang-avenue-sum-of-these-parts-cover-art.jpg) no-repeat 50% 50%;
+    background: url(https://i1.sndcdn.com/artworks-yeRU4ZR8A4nZrsaz-DvCNAw-t500x500.jpg) no-repeat 50% 50%;
     background-size: cover;
 }
 .sotp::after {
@@ -542,7 +542,7 @@ h6 {
 }
 
 
-
+/* Fado de Coimbra */
 
 .fadodecoimbra {
     background: url(assets/fadodecoimbra.jpg) no-repeat 50% 50%;
@@ -567,6 +567,45 @@ h6 {
 }
 .fadodecoimbra:hover::after{
     content: "Fábio Borges - Fado de Coimbra";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    color: #fff;
+    text-align: center;
+    top: 45%;
+}
+
+
+/* Irmos */
+
+.irmos {
+    background: url(https://i1.sndcdn.com/artworks-QRcVPTI2ZYrqraHN-r8XupA-t500x500.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.irmos::after {
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+}
+.irmos:hover::after{
+    content: "Irmos Sobre As Colinas";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
     writing-mode: horizontal-tb;

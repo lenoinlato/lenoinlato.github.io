@@ -268,6 +268,36 @@ nav #menu li a:hover {
       }
 }
 
+/*--------------- projects section --------------- */
+.proj {
+      height: 60vh;
+      display: center;
+      align-items: center;
+      justify-content: center;
+}
+
+.proj h1 {
+      font-weight: lighter;
+      text-align: center;
+      letter-spacing: -2px;
+      line-height: 2vh;
+      
+}
+
+.proj h2 {
+      font-family: 'Oswald', sans-serif;
+      font-weight: lighter;
+      text-align: left;
+      left: 10%;
+}
+
+
+@media(max-width: 768px) {
+      .header h1 {
+            font-size: 28px;
+      }
+}
+
 /*--------------- scroll down icon animation --------------- */
 .scroll-down {
       position: absolute;
