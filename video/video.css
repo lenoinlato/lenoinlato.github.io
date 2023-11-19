@@ -21,6 +21,7 @@ h6 {
     animation: goback 0.3s both;
 }
 
+
 .project:hover {
     cursor: pointer;
     transition: 0.35s;
@@ -28,7 +29,7 @@ h6 {
 }
 
 .project:hover::after {
-    background-color: #0f0f0f;
+   /* background-color: #0f0f0f; */
 }
 
 
@@ -338,7 +339,7 @@ h6 {
     height: 250px;
 }
 .agirl:hover{
-    background: url(assets/agirl.gif) no-repeat center;
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url(assets/agirl.jpg);
     background-size: 42vh;
 }
 .agirl:hover::after{
@@ -379,7 +380,7 @@ h6 {
     height: 250px;
 }
 .deti4devs:hover{
-    background: url(assets/deti4devs.gif) no-repeat center;
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url(assets/deti4devs.jpeg);
     background-size: 42vh;
 }
 .deti4devs:hover::after{
@@ -415,7 +416,7 @@ h6 {
     bottom: 0;
 }
 .morethanyou:hover{
-    background: url(assets/morethanyou.jpg) no-repeat 50% 10%;
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url(assets/morethanyou.jpg);
     animation: appearHere 0.3s both;
     background-size: cover;
     
@@ -454,7 +455,7 @@ h6 {
     bottom: 0;
 }
 .recital-marco2023:hover{
-    background: url(https://i.ibb.co/Jj01pmg/SCR-20230315-mqw.jpg) no-repeat 50% 10%;
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url(https://i.ibb.co/Jj01pmg/SCR-20230315-mqw.jpg);
     animation: appearHere 0.3s both;
     background-size: cover;
 }
@@ -492,7 +493,7 @@ h6 {
     bottom: 0;
 }
 .fraensemble-teaser:hover{
-    background: url(assets/fraensemble-teaser.jpeg) no-repeat 50% 10%;
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url(assets/fraensemble-teaser.jpeg);
     animation: appearHere 0.3s both;
     background-size: cover;
 }
@@ -529,7 +530,7 @@ h6 {
     bottom: 0;
 }
 .posfacio:hover{
-    background: url(assets/posfacio.jpeg) no-repeat 50% 10%;
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url(assets/posfacio.jpeg);
     animation: appearHere 0.3s both;
     background-size: cover;
 }
@@ -567,11 +568,13 @@ h6 {
     left: 0%;
     right: 0%;
     bottom: 0;
+    
 }
 .rapaz:hover{
-    background: url(assets/rapaz/2.jpg) no-repeat 50% 10%;
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url(assets/rapaz/2.jpg);
     animation: appearHere 0.3s both;
     background-size: cover;
+    
 }
 .rapaz:hover::after{
     content: "O Marta - Rapaz";

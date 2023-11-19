@@ -907,3 +907,18 @@ textarea:focus {
       }
   }
 
+  .coolgrad {
+      position: relative;
+      width: 100%;
+    }
+    
+    .coolgrad::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: rgb(255,255,255);
+      background: linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%); 
+        }
