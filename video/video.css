@@ -588,4 +588,43 @@ h6 {
 }
 
 
+/* Fábio Borges - Toada Beirã */
+.toadabeira {
+    background: url(assets/toadabeira/toadabeira.jpg) no-repeat 50% 10%;
+    background-size: cover;
+    
+
+}
+.toadabeira::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    
+}
+.toadabeira:hover{
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url(assets/toadabeira/toadabeira.jpg);
+    animation: appearHere 0.3s both;
+    background-size: cover;
+    
+}
+.toadabeira:hover::after{
+    content: "Fábio Borges - Toada Beirã";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 45%;
+}
 
