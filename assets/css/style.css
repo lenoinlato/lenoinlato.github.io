@@ -270,7 +270,7 @@ nav #menu li a:hover {
 
 /*--------------- projects section --------------- */
 .proj {
-      height: 60vh;
+      height: 50vh;
       display: center;
       align-items: center;
       justify-content: center;
@@ -922,3 +922,45 @@ textarea:focus {
       background: rgb(255,255,255);
       background: linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%); 
         }
+
+
+        /*--------------- projects section --------------- */
+  
+  .projects {
+      height: 35vh;
+      width: 40vh;
+      transition: 0.3s;
+      animation: goback 0.3s both;
+  }
+  
+  
+  .projects:hover {
+      cursor: pointer;
+      transition: 0.35s;
+      background-size: 45vh;
+  }
+  
+  .projects:hover::after {
+     /* background-color: #0f0f0f; */
+  }
+  
+  
+  @keyframes appearHere{
+      0%{
+  
+      }
+      100%{
+          height: 39vh; 
+      }
+  }
+  
+  @keyframes goback{
+      0%{
+  
+          height: 39vh;
+      }
+      100%{
+  
+      }
+  }
+  
