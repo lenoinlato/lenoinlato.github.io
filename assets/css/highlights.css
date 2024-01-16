@@ -266,6 +266,30 @@ h6 {
     bottom: 0;
 }
 
+/* HERAS (2024) */
+.heras2024 {
+    background: url(covers/heras2024.jpeg) no-repeat 50% 10%;
+    background-size: cover;
+    
+
+}
+.heras2024::after {
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 1.6vh;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 5%;
+    bottom: 0;
+    
+}
 
 /*--------------- gallery --------------- */
 
