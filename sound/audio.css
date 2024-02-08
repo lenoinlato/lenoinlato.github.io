@@ -694,3 +694,42 @@ h6 {
     text-align: center;
     top: 45%;
 }
+
+
+/* in memoriam sonorum */
+
+.inmemoriam {
+    background: url(https://www.esmae.ipp.pt/noticias/in-memoriam-sonorum-2013-na-memoria-dos-sons/image) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.inmemoriam::after {
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+}
+.inmemoriam:hover::after{
+    content: "IN MEMORIAM SONORUM";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    color: #fff;
+    text-align: center;
+    top: 45%;
+}
