@@ -733,3 +733,82 @@ h6 {
     text-align: center;
     top: 45%;
 }
+
+
+/* Fado Borges - Samaritana */
+
+.fb-samaritana {
+    background: url(assets/fb-samaritana.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.fb-samaritana::after {
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+}
+.fb-samaritana:hover::after{
+    content: "Fábio Borges - Samaritana";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    color: #fff;
+    text-align: center;
+    top: 45%;
+}
+
+
+
+/* Gustavo Costa - Natura Mimesis */
+
+.naturamimesis {
+    background: url(assets/naturamimesis.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.naturamimesis::after {
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+}
+.naturamimesis:hover::after{
+    content: "Gustavo Costa - Natura Mimesis";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    color: #fff;
+    text-align: center;
+    top: 45%;
+}
