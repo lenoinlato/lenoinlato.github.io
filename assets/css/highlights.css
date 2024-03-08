@@ -293,3 +293,117 @@ h6 {
 
 /*--------------- gallery --------------- */
 
+/* Fado Borges - Samaritana */
+
+.fb-samaritana {
+    background: url(covers/fb-samaritana.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.fb-samaritana::after {
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+}
+.fb-samaritana:hover::after{
+    content: "Fábio Borges - Samaritana";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    color: #fff;
+    text-align: center;
+    top: 45%;
+}
+
+
+/* Gustavo Costa - Natura Mimesis */
+
+.naturamimesis {
+    background: url(covers/naturamimesis.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.naturamimesis::after {
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+}
+.naturamimesis:hover::after{
+    content: "Gustavo Costa - Natura Mimesis";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    color: #fff;
+    text-align: center;
+    top: 45%;
+}
+
+/* Irmos */
+
+.irmos {
+    background: url(https://i1.sndcdn.com/artworks-QRcVPTI2ZYrqraHN-r8XupA-t500x500.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.irmos::after {
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+}
+.irmos:hover::after{
+    content: "Irmos Sobre As Colinas";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    color: #fff;
+    text-align: center;
+    top: 45%;
+}
