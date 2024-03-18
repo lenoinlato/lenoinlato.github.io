@@ -812,3 +812,42 @@ h6 {
     text-align: center;
     top: 45%;
 }
+
+
+/* SÓS (2024) */
+
+.sos2024 {
+    background: url(assets/sos2024.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.sos2024::after {
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+}
+.sos2024:hover::after{
+    content: "SÓS (2024)";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    color: #fff;
+    text-align: center;
+    top: 45%;
+}
