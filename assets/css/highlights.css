@@ -317,7 +317,7 @@ h6 {
     bottom: 0;
 }
 .fb-samaritana:hover::after{
-    content: "Fábio Borges - Samaritana";
+    content: "";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
     writing-mode: horizontal-tb;
@@ -356,7 +356,7 @@ h6 {
     bottom: 0;
 }
 .naturamimesis:hover::after{
-    content: "Gustavo Costa - Natura Mimesis";
+    content: "";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
     writing-mode: horizontal-tb;
@@ -394,7 +394,45 @@ h6 {
     bottom: 0;
 }
 .irmos:hover::after{
-    content: "Irmos Sobre As Colinas";
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    color: #fff;
+    text-align: center;
+    top: 45%;
+}
+
+/* povo */
+
+.povo {
+    background: url(covers/povo.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.povo::after {
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+}
+.povo:hover::after{
+    content: "";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
     writing-mode: horizontal-tb;
