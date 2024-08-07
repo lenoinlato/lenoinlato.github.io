@@ -969,3 +969,42 @@ h6 {
     text-align: center;
     top: 45%;
 }
+
+
+/* 1001 */
+
+.milformas {
+    background: url(assets/1001formas.jpeg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.milformas::after {
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+}
+.milformas:hover::after{
+    content: "1001 Formas de Acordar";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    color: #fff;
+    text-align: center;
+    top: 45%;
+}
