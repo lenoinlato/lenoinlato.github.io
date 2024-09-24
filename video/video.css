@@ -590,7 +590,7 @@ h6 {
 
 /* Fábio Borges - Toada Beirã */
 .toadabeira {
-    background: url(assets/toadabeira/toadabeira.jpg) no-repeat 50% 10%;
+    background: url(assets/toadabeira/2.jpeg) no-repeat 50% 10%;
     background-size: cover;
     
 
@@ -612,7 +612,7 @@ h6 {
     
 }
 .toadabeira:hover{
-    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url(assets/toadabeira/toadabeira.jpg);
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url(assets/toadabeira/4.jpeg);
     animation: appearHere 0.3s both;
     background-size: cover;
     
@@ -693,7 +693,7 @@ h6 {
     
 }
 .povo:hover{
-    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url(assets/povo/3.jpg);
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url(assets/povo/5.jpg);
     animation: appearHere 0.3s both;
     background-size: cover;
     
@@ -741,6 +741,47 @@ h6 {
 }
 .estagiodedanca2023:hover::after{
     content: "Estágio de Dança 2023";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 45%;
+}
+
+
+/* O BOBO */
+.obobo {
+    background: url(assets/obobo/2.jpg) no-repeat 50% 10%;
+    background-size: cover;
+    
+
+}
+.obobo::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    
+}
+.obobo:hover{
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url(assets/obobo/5.jpg);
+    animation: appearHere 0.3s both;
+    background-size: cover;
+    
+}
+.obobo:hover::after{
+    content: "O BOBO";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
     writing-mode: horizontal-tb;
