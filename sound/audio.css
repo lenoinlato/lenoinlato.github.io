@@ -1008,3 +1008,81 @@ h6 {
     text-align: center;
     top: 45%;
 }
+
+
+/* caught */
+
+.caughtinthenet {
+    background: url(assets/poster-caught-in-the-net.png) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.caughtinthenet::after {
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+}
+.caughtinthenet:hover::after{
+    content: "Caught in the Net (2024)";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    color: #fff;
+    text-align: center;
+    top: 45%;
+}
+
+
+/* liquen */
+
+.liquen-i {
+    background: url(https://glam-magazine.pt/wp-content/uploads/2024/10/24liquen-820x500.jpg) no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.liquen-i::after {
+    content: "";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #0f0f0f;
+    display: block;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+}
+.liquen-i:hover::after{
+    content: "Líquen - I";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    color: #fff;
+    text-align: center;
+    top: 45%;
+}
