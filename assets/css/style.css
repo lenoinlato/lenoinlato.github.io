@@ -534,6 +534,7 @@ nav #menu li a:hover {
       color:tan;
 }
 
+
 .hero-content a {
       float: right;
       margin-right: 2%;
@@ -549,6 +550,8 @@ nav #menu li a:hover {
 .hero-content h1 {
       font-style: italic;
 }
+
+
 
 
 @media(max-width: 768px) {
@@ -568,6 +571,11 @@ nav #menu li a:hover {
 .about h6 {
       font-size: 3vh;
       color: rgba(255, 255, 255, 0.85);
+      text-align: left;
+      font-style: italic;
+}
+
+.about h7 {
       text-align: left;
       font-style: italic;
 }
@@ -963,4 +971,59 @@ textarea:focus {
   
       }
   }
+
+
+  /* */
+
+.project-content {
+      margin-left: 0%;
+}
+
+.project-content p {
+      font-weight: 300;
+      line-height: 20px;
+      
+}
+
+.project-content h2 {
+      font-weight: 300;
+      line-height: 10px;
+      font-size: 15px;
+      color: tan;
+      margin-top: -1%;
+      text-align: left;
+}
+
+.project-content h3 {
+      font-size: 15px;
+      margin-top: -1%;
+      color: rgba(255, 255, 255, 0.85);
+      text-align: left;
+}
+
+.project-content h6 {
+      text-align: left
+      font-weight: bold;
+}
+
+.project-content h7 {
+      text-align: left;
+      color:tan;
+}
+
+
+.project-content a {
+       
+      color: tan;
+}
+
+.project-content a:hover {
+      cursor: pointer;
+      transition: 0.2s;
+      color: white;
+}
+
+.project-content h1 {
+      font-style: italic;
+}
   

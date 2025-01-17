@@ -10,18 +10,15 @@
 
       <!-- stylesheet -->
       <link rel="stylesheet" href="assets/css/style.css">
-      <link rel="stylesheet" href="assets/css/highlights.css">
-      <link rel="stylesheet" href="assets/css/projetos.css">
+      <link rel="stylesheet" href="assets/css/audiogallery.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="sound/audio.css">
 
       <!-- bootstrap cdns -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
       <!-- google fonts -->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&family=Lato&family=Oswald&display=swap" rel="stylesheet"> 
       <!-- font-family: 'Kantumruy Pro', sans-serif;
       font-family: 'Lato', sans-serif;
@@ -36,7 +33,12 @@
 
 </head>
 <body>
-      <div class="wrapper unselectable">
+      <style>
+            .under {
+                  text-decoration: underline;
+            }
+      </style>
+      <div class="wrapper">
 
             <!--------------- navbar starts here --------------->
             <nav>
@@ -45,11 +47,7 @@
                   </span>
 
                   <ul id="menu">
-                        <style>
-                              .under {
-                                    text-decoration: underline;
-                              }
-                        </style>
+                        
                         <li><a href="index.html">home</a></li>
                         <li><a href="sound.html">sound</a></li>
                         <li><a href="video.html">video</a></li>
@@ -57,6 +55,8 @@
                         <li><a href="about.html">about</a></li>
                         <li><a href="mailto:lenoinlato@gmail.com">let's talk</a></li>
                   </ul>
+
+                  
 
                   <div id="toggle">
                         <div class="span">menu</div>
@@ -74,197 +74,82 @@
                               }
                         </style>
                         <li><a href="index.html">home</a></li>
-                        <li><a href="sound.html">sound</a></li>
+                        <li><a class="under" href="sound.html">sound</a></li>
                         <li><a href="video.html">video</a></li>
                         <li><a href="projects.html">projects</a></li>
-                        <li><a class="under" href="about.html">about</a></li>
+                        <li><a href="about.html">about</a></li>
                         <li><a href="mailto:lenoinlato@gmail.com">let's talk</a></li>
                   </ul>
-
             </div>
             <!--------------- navbar ends here --------------->
 
-
-            <!--------------- hero image starts here --------------->
-            <div class="container ">
-                  <div class="row proj fadeInRight">
-                        <h1 class="wow">Projects</h1>
-                  </div>
+            <!--------------- hero section starts here --------------> 
+            <div class="her" id="her">
             </div>
-            <!--------------- hero image ends here --------------->
 
-           
-
-            <div class="container-fluid fadeInLeft">
-                  
-                  <div class="row">
-                        <div class="col-lg projetos pmf">
-                              <div class="container">
-                                    <div class="row">
-                                          <h2 class="wow fadeInUp">Pomares Music Fest</h2>
-                                    </div>
-                        
-                                    <div class="row">
-                                          <div class="col">
-                                                <div class="row">
-                                                
-                                                      <h3 class="wow fadeInUp">Founder / Creative Director</h4>
-                                                </div>
-                                                <div class="row">
-                                                      <p class="wow fadeInUp">2023 - current</p>
-                                                   
-                                                </div>
-                                                <p class="wow fadeInUp"> Culture is the art of the people. 2020 prefaced what was actually missing: space for people, for what makes them people. To think,
-                                                      live, coexist, see, listen, sweat - to move, deep down. Transfiguring the momento into yet another question, which aims to be elevated, complemented, undone or remade over and over again, which spreads across the dirt and fertilizes 
-                                                      this living being that is Culture.
-                                                </p>
-                                                <p class="wow fadeInUp"> PMF (or Pomares Music Fest) is a small fest that happens every end of july at Pomares, Arganil, right at the north birthplace of the Azor mountains. It welcomes people from all around the country for 
-                                                      performances from emerging artists and local community focused workshops and showcases.
-                                                </p>
-                                                <h3 class="wow fadeInUp"> @pomaresmusicfest</h3>
-                                                <div class="whitespace"></div>
-                                          </div>
-                                    </div>
-                              </div>
-                        </div>
-                        <div class="col-lg projetos pmf">
-                              <div class="container">
-                                    <div class="row">
-                                          <h2 class="wow fadeInUp">Fábio Borges</h2>
-                                    </div>
-                        
-                                    <div class="row">
-                                          <div class="col">
-                                                <div class="row">
-                                                
-                                                      <h3 class="wow fadeInUp">Co-producer / Technical Director</h4>
-                                                </div>
-                                                <div class="row">
-                                                      <p class="wow fadeInUp"> 2023 - current</p>
-                                                   
-                                                </div>
-                                                <p class="wow fadeInUp"> Fábio Borges brings new life to Coimbra's fado, a genre with a rich and wide history that has long been neglected. But more than recovering back lost and almost forgotten sounds, Fábio Borges is 
-                                                      about reviving its connection with the people and sharing its collective soul.
-                                                </p>
-                                                <h4 class="wow fadeInUp"> @fadoborges</h4>
-                                          </div>
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-
-                  <div class="row">
-                        <div class="col-lg projetos pmf">
-                             <div class="container">
-                                    <div class="row">
-                                          <h2 class="wow fadeInUp">R.I.Ju - Côja</h2>
-                                    </div>
-                              
-                                    <div class="row">
-                                          <div class="col">
-                                                <div class="row">
-                                                
-                                                      <h3 class="wow fadeInUp">Co-producer / Technical</h4>
-                                                        </div>
-                                                <div class="row">
-                                                      <p class="wow fadeInUp"> 2023 - current</p>
-                                                   
-                                                </div>
-                                                <p class="wow fadeInUp"> Cultural space based in Côja, Arganil, hosting a variety of events around the performing arts, regular workshops and residencies.
-                                                </p>
-                                                <h3 class="wow fadeInUp"> @riju.coja</h3>
-                                          </div>
-                                     </div>
-                                </div>
-                         </div>
-                         <div class="col-lg projetos pmf">
-                              <div class="container">
-                                    <div class="row">
-                                          <h2 class="wow fadeInUp">Leno in Lato</h2>
-                                    </div>
-                        
-                                    <div class="row">
-                                          <div class="col">
-                                                <div class="row">
-                                                
-                                                      <h3 class="wow fadeInUp">Producer / Composer</h4>
-                                                </div>
-                                                <div class="row">
-                                                      <p class="wow fadeInUp"> 2022 - current</p>
-                                                   
-                                                </div>
-                                                     <p class="wow fadeInUp"> Personal sound project.
-                                                </p>
-                                                <h2 href="https://lenoinlato.bandcamp.com/" target="_blank" class="fa center fa-bandcamp fa-2x wow fadeInUp" data-wow-delay="0.4s"></h2>
-                                          </div>
-                                    </div>
-                              </div>
-                        </div>           
-                  </div>
-
-
-                  <div class="row">
-                        <div class="col-lg projetos pmf">
-                             <div class="container">
-                                    <div class="row">
-                                          <h2 class="wow fadeInUp">Português Elástico</h2>
-                                    </div>
-                              
-                                    <div class="row">
-                                          <div class="col">
-                                                <div class="row">
-                                                
-                                                      <h3 class="wow fadeInUp">Curator</h4>
-                                                        </div>
-                                                <div class="row">
-                                                      <p class="wow fadeInUp"> 2022 - current</p>
-                                                   
-                                                </div>
-                                                <p class="wow fadeInUp"> Archive project that brings to light more obscure / hard to find portuguese and PALOP music.
-                                                </p>
-                                                <h2 href="https://www.youtube.com/channel/UCOpqq_ZvUlxuQawbpchxt1A" target="_blank" class="fa center fa-youtube fa-2x wow fadeInUp" data-wow-delay="0.4s"></h2>
-                                          </div>
-                                     </div>
-                                </div>
-                         </div>    
-                         <div class="col-lg projetos pmf">
-                              <div class="container">
-                                     <div class="row">
-                                           <h2 class="wow fadeInUp">TRUST Collective</h2>
-                                     </div>
-                               
-                                     <div class="row">
-                                           <div class="col">
-                                                 <div class="row">
-                                                 
-                                                       <h3 class="wow fadeInUp">Editorial Manager</h4>
-                                                         </div>
-                                                 <div class="row">
-                                                       <p class="wow fadeInUp"> Jan 2024 - current</p>
-                                                    
-                                                 </div>
-                                                 <p class="wow fadeInUp"> 
-                                                 </p>
-                                                 <h2 href="http://trust-collective.org/" target="_blank" class="fa center fa-globe fa-2x wow fadeInUp" data-wow-delay="0.4s"></h2>
-                                           </div>
-                                      </div>
-                                 </div>
-                          </div>       
-                  </div>
-
-                  <br><br>
-                  <h6>Leonardo Patrício is a multimedia artist and audiovisual technician, born in Viseu and currently based in Oporto, PT.</h6>
-                  <h6>His work resides in the bridge between music and film, with a constant DIY atitude and centered around community sinergy.</h6>
-            </div>
-            
             <!--------------- hero section ends here --------------->
 
-            <div class="whitespace"></div>
+            <!--------------- content starts here --------------->
+
+            <div class="container-fluid">
+
+                  <br><br><br>
+                  
+                  <div class="row fadeInLeft">
+                        
+                        <div class="col-lg-3 project-content" data-wow-delay="0.2s">
+                              <h1>ARTE MINIMA</h1>
+                              <h2>Executive producer</h2>
+                              <h3>2024 - ...</h3>
+                              <p>Early Music Ensemble, led by Pedro Sousa Silva.</p>
+                              <p><a class="under" href = "https://www.arteminima.org/">website</a></p>
+                              <h7><a href="https://www.instagram.com/arte_minima_ensemble" class=" fa fa-instagram wow fadeInUp"></a></h7>
+                        </div>
+
+                        <div class="col-lg-3 project-content" data-wow-delay="0.2s">
+                              <h1>MENANO</h1>
+                              <h2>Producer, artistic director</h2>
+                              <h3>2024 - ...</h3>
+                              <p>Music project directed by Fábio Borges, revisiting António Menano's reportoire within a contemporary approach.</p>
+                              <p><a>soon</a></p>
+                              
+                        </div>  
+
+                        <div class="col-lg-6 project-content" data-wow-delay="0.2s">
+                              <h1>LAURINDINHA, LIBERTEI A MINHA VOZ!</h1>
+                              <h2>Associate artistic director</h2>
+                              <h3>2024 - 2025</h3>
+                              <p>A <a class="" href = "https://instagram.com/riju.coja"> M.I.N.H.A.</a> project, in partnership with <a class="" href = "https://instagram.com/riju.coja">RIJu</a>, that brings traditional chants to new ways of collective musical creation and experimentation. Brought together by Inês Luzio, Leonardo Patrício and Bernardo Chatillon.</p>
+                              <p><a class="under" href = "https://shorturl.at/oZmP5">info</a></p>
+                              <h7><a href="https://www.instagram.com/minha.projeto/" class=" fa fa-instagram wow fadeInUp"></a></h7>
+                        </div>  
+
+                        <div class="col-lg-3 project-content" data-wow-delay="0.2s">
+                              <h1>MACHAMBA</h1>
+                              <h2>Producer</h2>
+                              <h3>2024 - ...</h3>
+                              <p>Porto-based booker and promoter collective, founded by Luís Masquete.</p>
+                              <h7><a href="https://www.instagram.com/machamba.pt/" class=" fa fa-instagram wow fadeInUp"></a></h7>
+                        </div> 
+
+                        <div class="col-lg-3 project-content" data-wow-delay="0.2s">
+                              <h1>PORTA 253</h1>
+                              <h2>Camera operator, editor</h2>
+                              <h3>2023 - ...</h3>
+                              <p>Braga-based audiovisual project dedicated to documenting and promoting portuguese music, founded in 2015 by Joana Jorge and João Figueiredo.</p>
+                              <h7><a href="https://www.instagram.com/machamba.pt/" class=" fa fa-youtube wow fadeInUp"></a></h7>
+                        </div> 
+                        
+                  </div>
+                  <br><br>
+            </div>
+
+            <!--------------- content ends here --------------->
 
             <!--------------- footer starts here --------------->
-            
             <div class="footer">
                   <div class="container">
+
                         <div class="hr">
                               <div class="row"></div>
                         </div>
@@ -301,8 +186,19 @@
       <!-- greensock cdn -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
+
+      <script>
+            // When the user clicks on <div>, open the popup
+            function myFunction() {
+              var popup = document.getElementById("myPopup");
+              popup.classList.toggle("show");
+            }
+      </script>
+
+
       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
       <script type="text/javascript">
+
 
       // navigation starts here
 
