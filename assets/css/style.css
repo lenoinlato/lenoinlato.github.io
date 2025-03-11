@@ -1027,3 +1027,128 @@ textarea:focus {
       font-style: italic;
 }
   
+
+/* TOUR */
+#tours {
+	background-image: url(../.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 750px;
+}
+#tours p {
+	color: #fff;
+	font-size: 25px;
+	letter-spacing: 3px;
+	font-weight: 250;
+	line-height: 30px;
+}
+#tours h6 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 45px;
+	letter-spacing: 5px;
+	font-weight: 400;
+	margin: 15px 15px 15px;
+}
+
+.tour-list {
+	padding: 0px 0 70px;
+}
+
+.tour-list li {
+	border-bottom: 1px solid #222;
+	list-style: outside none none;
+	display: table;
+	width: 100%;
+	padding-bottom: 15px;
+	padding-top: 10px;
+}
+
+.tour-list li:first-child {
+	border-top: none;
+}
+
+.tour-list li:last-child {
+	border-bottom: none;
+}
+
+.tour-date {
+	font-size: 30px;
+	float: left;
+	color: #fff;
+	font-weight: 700;
+}
+
+.tour-date span {
+	display: block;
+	font-size: 17px;
+	margin: -10px 0px 0px;
+	font-weight: 400;
+	text-align: right;
+}
+
+.tour-date span em {
+	font-size: 13px;
+	font-style: normal;
+	margin: 0 -3px;
+	display: none;
+}
+
+.tour-info {
+	margin-left: 20px;
+	display: inline-block;
+	font-weight: 300;
+	margin-top: 7px;
+	font-size: 22px;
+	color: #FFF;
+}
+
+.tour-info3 {
+	margin-left: 20px;
+	display: inline-block;
+	font-weight: 300;
+	margin-top: 7px;
+	font-size: 18px;
+	color: #FFF;
+}
+
+
+.tour-info a {
+	color: #fff;
+	font-size: 3vh;
+	background: rgb(97, 2, 134);
+	padding: 4px 12px;
+	border-radius: 4px;
+}
+
+.tour-info2 {
+      margin-left: 20px;
+	color: #010101;
+      display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 2vh;
+	background: #fff;
+	padding: 4px 10px;
+	border-radius: 4px;
+}
+
+
+.tour-ticket {
+	margin-left: 6vh;
+	display: block;
+}
+
+.tour-ticket a {
+	color: #010101;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1vh;
+	background: #fff;
+	padding: 4px 10px;
+	border-radius: 4px;
+}
