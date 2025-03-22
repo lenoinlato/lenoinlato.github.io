@@ -832,3 +832,87 @@ h6 {
     text-align: center;
     top: 45%;
 }
+
+
+/* AMP Promo 2025 */
+.amppromo {
+    background: url(assets/amppromo.jpg) no-repeat 50% 10%;
+    background-size: cover;
+    
+
+}
+.amppromo::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    
+}
+.amppromo:hover{
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url(assets/amppromo.jpg);
+    animation: appearHere 0.3s both;
+    background-size: cover;
+    
+}
+.amppromo:hover::after{
+    content: "AMP - Vídeo Promocional 2025";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 45%;
+}
+
+
+
+
+/* ADMPA */
+.ADMPA {
+    background: url(assets/ADMPA.jpg) no-repeat 50% 10%;
+    background-size: cover;
+    
+
+}
+.ADMPA::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    
+}
+.ADMPA:hover{
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url(assets/ADMPA.jpg);
+    animation: appearHere 0.3s both;
+    background-size: cover;
+    
+}
+.ADMPA:hover::after{
+    content: "Antes de mais, Parabéns Atrasados";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 45%;
+}
