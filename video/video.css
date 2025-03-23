@@ -879,7 +879,7 @@ h6 {
 
 /* ADMPA */
 .ADMPA {
-    background: url(assets/ADMPA.jpg) no-repeat 50% 10%;
+    background: url(assets/ADMPA.jpeg) no-repeat 50% 10%;
     background-size: cover;
     
 
@@ -901,7 +901,7 @@ h6 {
     
 }
 .ADMPA:hover{
-    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url(assets/ADMPA.jpg);
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url(assets/ADMPA.jpeg);
     animation: appearHere 0.3s both;
     background-size: cover;
     
