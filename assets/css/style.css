@@ -536,9 +536,10 @@ nav #menu li a:hover {
 
 
 .hero-content a {
-      float: right;
+      float: left;
       margin-right: 2%;
-      color: white;
+      color: rgb(170, 170, 170);
+      font-family: 'Kantumruy Pro', sans-serif !important;
 }
 
 .hero-content a:hover {
