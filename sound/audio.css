@@ -1164,3 +1164,43 @@ h6 {
     text-align: center;
     top: 45%;
 }
+
+/* lost in triplets */
+.lostintriplets {
+    background: url(assets/lit.png) no-repeat 50% 10%;
+    background-size: cover;
+    
+
+}
+.lostintriplets::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    
+}
+.lostintriplets:hover{
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url();
+    animation: appearHere 0.3s both;
+    background-size: cover;
+    
+}
+.lostintriplets:hover::after{
+    content: "Lost in Triplets - Brinde";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 45%;
+}
