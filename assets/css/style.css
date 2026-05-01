@@ -566,8 +566,12 @@ nav #menu li a:hover {
 /*---------------about page --------------- */
 
 .about {
-      height: 500px;
+      
       margin-top: 120px;
+      display: block;
+    overflow: hidden;
+    height: auto !important; 
+    clear: both;
 }
 .about h6 {
       font-size: 3vh;
@@ -577,13 +581,20 @@ nav #menu li a:hover {
 }
 
 .about h7 {
+      font-size: 1.6vh;
       text-align: left;
       font-style: italic;
 }
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
 
 .image {
-      background: url(https://i.ibb.co/d2QZJdh/fujilo.jpg) no-repeat 50% 70%;
-      height: 20vh;
+      background: url(images/leopic.jpg) no-repeat 50% 70%;
+      height: 55vh;
       background-size: cover;
 }
 
@@ -591,6 +602,7 @@ nav #menu li a:hover {
       background: url(https://i.ibb.co/1rLz4xs/leogif.gif) no-repeat 50% 70%;
       height: 30vh;
 }
+
 
 /*--------------- contact form --------------- */
 
@@ -1067,6 +1079,7 @@ textarea:focus {
 	width: 100%;
 	padding-bottom: 15px;
 	padding-top: 10px;
+      padding-left: 2vh;
 }
 
 .tour-list li:first-child {
@@ -1104,7 +1117,7 @@ textarea:focus {
 	display: inline-block;
 	font-weight: 300;
 	margin-top: 7px;
-	font-size: 22px;
+	font-size: 3vh;
 	color: #FFF;
 }
 
@@ -1113,21 +1126,21 @@ textarea:focus {
 	display: inline-block;
 	font-weight: 300;
 	margin-top: 7px;
-	font-size: 18px;
+	font-size: 2vh;
 	color: #FFF;
 }
 
 
 .tour-info a {
 	color: #fff;
-	font-size: 3vh;
+	font-size: 2vh;
 	background: rgb(97, 2, 134);
 	padding: 4px 12px;
 	border-radius: 4px;
 }
 
 .tour-info2 {
-      margin-left: 20px;
+      margin-left: 50px;
 	color: #010101;
       display: inline-block;
 	text-transform: uppercase;
@@ -1135,7 +1148,7 @@ textarea:focus {
 	font-size: 2vh;
 	background: #fff;
 	padding: 4px 10px;
-	border-radius: 4px;
+	border-radius: 1px;
 }
 
 
@@ -1148,8 +1161,8 @@ textarea:focus {
 	color: #010101;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-size: 1vh;
+	font-size: 1.1vh;
 	background: #fff;
 	padding: 4px 10px;
-	border-radius: 4px;
+	border-radius: 1px;
 }

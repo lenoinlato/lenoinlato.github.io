@@ -1204,3 +1204,43 @@ h6 {
     text-align: center;
     top: 45%;
 }
+
+.lq-aurora {
+    background: url(https://musica.com.pt/storage/2026/04/54ny8f90a_2.jpg) no-repeat 50% 10%;
+    background-size: cover;
+    
+
+}
+.lq-aurora::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    
+}
+}
+.lq-aurora:hover{
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url();
+    animation: appearHere 0.3s both;
+    background-size: cover;
+    
+}
+.lq-aurora:hover::after{
+    content: "Líquen - Aurora";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 45%;
+}
