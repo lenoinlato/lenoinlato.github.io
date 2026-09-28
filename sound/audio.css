@@ -37,7 +37,7 @@ h6 {
 
 /*MARIANO*/
 .mariano {
-    background: url(assets/mariano.jpg) no-repeat 40% 20%;
+    background: url(assets/mariano.jpeg) no-repeat 40% 20%;
     background-size: cover;
     left: 0%
 }
@@ -70,7 +70,7 @@ h6 {
 
 
 .foreva {
-    background: url(assets/foreva.jpg) no-repeat 40% 20%;
+    background: url(assets/foreva.jpeg) no-repeat 40% 20%;
     background-size: cover;
     left: 0%
 }
@@ -104,7 +104,7 @@ h6 {
 
 
 .omoca {
-    background: url(assets/omoca.jpg) no-repeat 50% 50%;
+    background: url(assets/omoca.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
 
@@ -136,7 +136,7 @@ h6 {
 
 
 .fadoportuguesa {
-    background: url(assets/fadoportuguesa.jpg) no-repeat 50% 50%;
+    background: url(assets/fadoportuguesa.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
 
@@ -169,7 +169,7 @@ h6 {
 
 
 .mulherbeira {
-    background: url(assets/mulherbeira.jpg) no-repeat 50% 50%;
+    background: url(assets/mulherbeira.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
 
@@ -196,7 +196,7 @@ h6 {
 }
 
 .losetofear {
-    background: url(assets/losetofear.jpg) no-repeat 50% 50%;
+    background: url(assets/losetofear.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
 
@@ -229,7 +229,7 @@ h6 {
 
 
 .ocorpo {
-    background: url(assets/ocorpo.jpg) no-repeat 50% 50%;
+    background: url(assets/ocorpo.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
 
@@ -255,7 +255,7 @@ h6 {
 
 
 .agcd {
-    background: url(assets/agcd.jpg) no-repeat 50% 50%;
+    background: url(assets/agcd.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
 
@@ -289,7 +289,7 @@ h6 {
 
 
 .gretua2021 {
-    background: url(assets/gretua2021.jpg) no-repeat 50% 50%;
+    background: url(assets/gretua2021.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
 
@@ -506,7 +506,7 @@ h6 {
 
 
 .passinggaps {
-    background: url(assets/passinggaps.png) no-repeat 50% 50%;
+    background: url(assets/passinggaps.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
 
@@ -545,7 +545,7 @@ h6 {
 /* Fado de Coimbra */
 
 .fadodecoimbra {
-    background: url(assets/fadodecoimbra.jpg) no-repeat 50% 50%;
+    background: url(assets/fadodecoimbra.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
 
@@ -935,7 +935,7 @@ h6 {
 /* cha */
 
 .chadecigarra {
-    background: url(assets/erika.jpg) no-repeat 50% 50%;
+    background: url(assets/erika.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
 
@@ -1013,7 +1013,7 @@ h6 {
 /* caught */
 
 .caughtinthenet {
-    background: url(assets/poster-caught-in-the-net.png) no-repeat 50% 50%;
+    background: url(assets/poster-caught-in-the-net.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
 
@@ -1091,7 +1091,7 @@ h6 {
 /* DRIII */
 
 .DRIII {
-    background: url(assets/DRIII.jpg) no-repeat 50% 50%;
+    background: url(assets/DRIII.jpeg) no-repeat 50% 50%;
     background-size: cover;
 }
 
@@ -1167,7 +1167,7 @@ h6 {
 
 /* lost in triplets */
 .lostintriplets {
-    background: url(assets/lit.png) no-repeat 50% 10%;
+    background: url(assets/lit.jpeg) no-repeat 50% 10%;
     background-size: cover;
     
 
@@ -1205,11 +1205,11 @@ h6 {
     top: 45%;
 }
 
-.lq-aurora {
-    background: url(https://musica.com.pt/storage/2026/04/54ny8f90a_2.jpg) no-repeat 50% 10%;
-    background-size: cover;
-    
 
+/* aurora */
+.lq-aurora {
+    background: url(assets/lq-aurora.jpg) no-repeat 50% 10%;
+    background-size: cover;
 }
 .lq-aurora::after {
     font-family: 'Kantumruy Pro', sans-serif;
@@ -1236,6 +1236,89 @@ h6 {
 }
 .lq-aurora:hover::after{
     content: "Líquen - Aurora";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 45%;
+}
+
+
+
+
+/* perfil */
+.lq-perfil {
+    background: url(assets/lq-perfil.jpg) no-repeat 50% 10%;
+    background-size: cover;
+}
+.lq-perfil::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    
+}
+}
+.lq-perfil:hover{
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url();
+    animation: appearHere 0.3s both;
+    background-size: cover;
+    
+}
+.lq-perfil:hover::after{
+    content: "Líquen - Perfil do Ocidente";
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: horizontal-tb;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    top: 45%;
+}
+
+
+
+/* melifluo */
+.melifluo_pqem {
+    background: url(assets/melifluo_pqem.jpg) no-repeat 50% 10%;
+    background-size: cover;
+}
+.melifluo_pqem::after {
+    font-family: 'Kantumruy Pro', sans-serif;
+    font-style: italic;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    display: block;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 0;
+    
+}
+}
+.melifluo_pqem:hover{
+    background-image:linear-gradient(0deg, #101010 0%, rgba(0,212,255,0) 100%), url();
+    animation: appearHere 0.3s both;
+    background-size: cover;
+    
+}
+.melifluo_pqem:hover::after{
+    content: "Melífluo - Pensava que éramos amigos";
     font-family: 'Kantumruy Pro', sans-serif;
     font-style: italic;
     writing-mode: horizontal-tb;
