@@ -7,7 +7,7 @@
   { "isoDate": "2026-03-27", "nome": "Carmo'81", "local": "Viseu, PT", "projeto": "Bela Noia" },
   { "isoDate": "2026-05-22", "nome": "Diário de Uma República III", "local": "Caldas da Rainha, PT", "projeto": "Amarelo Silvestre" },
   { "isoDate": "2026-08-06", "nome": "FESTIVAL BONS SONS", "local": "Cem Soldos, PT","projeto": "LÍQUEN" },
-  { "isoDate": "2026-09-05", "nome": "TBA", "local": "TBA", "projeto": "Réptil" },
+  { "isoDate": "2026-09-05", "nome": "CABAREX", "local": "Teatro-Cine de Gouveia", "projeto": "Réptil" },
   { "isoDate": "2026-10-31", "nome": "Diário de Uma República III", "local": "Lamego, PT", "projeto": "Amarelo Silvestre" },
 
   { "isoDate": "2026-03-01", "nome": "ANOITECER", "local": "Casa da Cultura Ílhavo, PT", "projeto": "CEM Palcos" },
@@ -48,11 +48,11 @@
   { "isoDate": "2025-03-21", "nome": "CLAP YOUR HANDS", "local": "Leiria, PT", "projeto": "Líquen", "bilhetes": "https://www.teatrojlsilva.pt/evento/clap-your-hands-6/" },
   { "isoDate": "2025-03-06", "nome": "Cabaré Constantino", "local": "Teatro Constantino Nery, Matosinhos, PT", "projeto": "Réptil" },
   { "isoDate": "2025-01-25", "nome": "TCSB", "local": "Coimbra, PT", "projeto": "Líquen" },
-  { "isoDate": "2026-11-07", "nome": "TBA", "local": "RCA, Porto, PT", "projeto": "TBA" },
-  { "isoDate": "2026-11-13", "nome": "TBA", "local": "Salão Brazil, Coimbra, PT", "projeto": "TBA" },
-  { "isoDate": "2026-11-14", "nome": "TBA", "local": "Casa Capitão, Lisboa, PT", "projeto": "TBA" },
-  { "isoDate": "2026-11-21", "nome": "TBA", "local": "Cine-teatro Avenida, Castelo Branco, PT", "projeto": "TBA" },
-  { "isoDate": "2026-12-04", "nome": "TBA", "local": "Teatro Municipal da Guarda, Guarda, PT", "projeto": "TBA" },
+  { "isoDate": "2026-11-07", "nome": "RCA", "local": "Porto, PT", "projeto": "LÍQUEN" },
+  { "isoDate": "2026-11-13", "nome": "Salão Brazil", "local": "Coimbra, PT", "projeto": "LÍQUEN" },
+  { "isoDate": "2026-11-14", "nome": "Casa Capitão", "local": "Lisboa, PT", "projeto": "LÍQUEN" },
+  { "isoDate": "2026-11-21", "nome": "Cine-teatro Avenida", "local": "Castelo Branco, PT", "projeto": "LÍQUEN" },
+  { "isoDate": "2026-12-04", "nome": "Teatro Municipal da Guarda", "local": "Guarda, PT", "projeto": "LÍQUEN" },
     { "isoDate": "2026-06-04", 
   "nome": "Teatrão", 
   "local": "Coimbra, PT", 
@@ -70,9 +70,10 @@
   "local": "Viseu, PT", 
   "projeto": "Bela Noia" },
   { "isoDate": "2027-01-20", 
-  "nome": "TBA", 
+  "nome": "Teatro Municipal de Bragança", 
   "local": "Bragança, PT", 
-  "projeto": "TBA" }
+  "projeto": "LÍQUEN" },
+    { "isoDate": "2027-01-16", "nome": "Teatro Joaquim de Almeida", "local": "Montijo, PT", "projeto": "LÍQUEN" }
 ]
 
  
