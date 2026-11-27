@@ -1166,3 +1166,77 @@ textarea:focus {
 	padding: 4px 10px;
 	border-radius: 1px;
 }
+
+
+
+
+
+
+/* Outer container provides vertical scroll runway */
+.gallery-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Sticky viewport locks the gallery on screen while scrolling through wrapper */
+.gallery-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+/* Horizontal flex track moved via translate3d for 60fps GPU acceleration */
+.gallery-track {
+  display: flex;
+  gap: 2.5vw;
+  padding: 0 8vw;
+  will-change: transform;
+}
+
+.video-card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 38vw;          /* Adjust width for aspect ratio */
+  height: 65vh;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #161616;
+  cursor: grab;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.video-card:hover {
+  transform: scale(0.985);
+}
+
+.video-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+.card-meta {
+  position: absolute;
+  bottom: 16px;
+  left: 18px;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(8px);
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .video-card {
+    width: 80vw;
+    height: 55vh;
+  }
+}

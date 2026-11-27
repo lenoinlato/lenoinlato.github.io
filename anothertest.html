@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="author" content="harrnish">
+
+      <title>LEONARDO PATRÍCIO</title>
+
+      <!-- stylesheet -->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/highlights.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <!-- bootstrap cdns -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <!-- google fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&family=Lato&family=Oswald&display=swap" rel="stylesheet"> 
+      <!-- font-family: 'Kantumruy Pro', sans-serif;
+      font-family: 'Lato', sans-serif;
+      font-family: 'Oswald', sans-serif; -->
+
+      <!-- terminal effect -->
+      <script src="assets/js/t.min.js"></script>
+
+      <!-- for on scroll animations -->
+      <link rel="stylesheet" href="animate.css">
+      <script src="assets/js/wow.min.js"></script>
+
+      <style>
+            /* Horizontal Background Video Gallery */
+            .gallery-wrapper {
+                  position: relative;
+                  width: 100%;
+                  z-index: 1;
+            }
+
+            .gallery-sticky {
+                  position: sticky;
+                  top: 0;
+                  width: 100vw;
+                  height: 100dvh;
+                  overflow: hidden;
+                  display: flex;
+                  align-items: center;
+            }
+
+            .gallery-track {
+                  display: flex;
+                  gap: 2.5vw;
+                  padding: 0 8vw;
+                  will-change: transform;
+            }
+
+            .video-card {
+                  position: relative;
+                  flex: 0 0 auto;
+                  width: 42vw;
+                  height: 68vh;
+                  border-radius: 10px;
+                  overflow: hidden;
+                  background: #111;
+                  cursor: grab;
+                  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+
+            .video-card:hover {
+                  transform: scale(0.985);
+            }
+
+            .video-card video {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                  pointer-events: none;
+            }
+
+            .card-meta {
+                  position: absolute;
+                  bottom: 16px;
+                  left: 18px;
+                  font-family: 'Kantumruy Pro', sans-serif;
+                  font-size: 0.8rem;
+                  letter-spacing: 0.06em;
+                  text-transform: uppercase;
+                  color: #fff;
+                  background: rgba(0, 0, 0, 0.55);
+                  backdrop-filter: blur(8px);
+                  padding: 6px 12px;
+                  border-radius: 6px;
+            }
+
+            /* Overlay hero titles on top of the sticky background gallery */
+            .hero-overlay-titles {
+                  position: absolute;
+                  bottom: 10vh;
+                  left: 8vw;
+                  z-index: 10;
+                  pointer-events: none;
+                  mix-blend-mode: difference;
+            }
+
+            .hero-overlay-titles h2 {
+                  margin: 0;
+                  line-height: 1.15;
+            }
+
+            /* Keep navbar floating cleanly above the gallery */
+            nav {
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  z-index: 50;
+            }
+
+            #resize {
+                  z-index: 60;
+            }
+
+            @media (max-width: 768px) {
+                  .video-card {
+                        width: 82vw;
+                        height: 56vh;
+                  }
+            }
+      </style>
+
+</head>
+<body>
+      <div class="wrapper unselectable">
+
+            <!--------------- navbar starts here --------------->
+            <nav>
+                  <span id="name">
+                        <a href="index.html">LEONARDO PATRÍCIO</a>
+                  </span>
+
+                  <ul id="menu">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="sound.html">sound</a></li>
+                        <li><a href="video.html">video</a></li>
+                        <li><a href="projects.html">projects</a></li>
+                        <li><a href="discography.html">discography</a></li>
+                        <li><a href="live.html">live</a></li>
+                        <li><a href="studio.html">studio</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="mailto:lenoinlato@gmail.com">let's talk</a></li>
+                  </ul>
+
+                  <div id="toggle">
+                        <div class="span">menu</div>
+                  </div>
+
+            </nav>
+
+            <div id="resize">
+                  <div class="close-btn">close</div>
+
+                  <ul id="menu">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="sound.html">sound</a></li>
+                        <li><a href="video.html">video</a></li>
+                        <li><a href="projects.html">projects</a></li>
+                        <li><a href="discography.html">discography</a></li>
+                        <li><a href="live.html">live</a></li>
+                        <li><a href="studio.html">studio</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="mailto:lenoinlato@gmail.com">let's talk</a></li>
+                  </ul>
+            </div>
+            <!--------------- navbar ends here --------------->
+
+
+
+            <!--------------- hero horizontal video gallery starts here --------------->
+            <section class="gallery-wrapper" id="galleryWrapper">
+                  <div class="gallery-sticky" id="hero">
+                        <div class="gallery-track" id="galleryTrack">
+
+                              <article class="video-card">
+                                    <video src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" muted loop playsinline preload="metadata"></video>
+                                    <div class="card-meta">01 — Showreel</div>
+                              </article>
+
+                              <article class="video-card">
+                                    <!-- Replace with your 2nd video URL/path -->
+                                    <video src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" muted loop playsinline preload="metadata"></video>
+                                    <div class="card-meta">02 — Project Two</div>
+                              </article>
+
+                              <article class="video-card">
+                                    <!-- Replace with your 3rd video URL/path -->
+                                    <video src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" muted loop playsinline preload="metadata"></video>
+                                    <div class="card-meta">03 — Project Three</div>
+                              </article>
+
+                              <article class="video-card">
+                                    <!-- Replace with your 4th video URL/path -->
+                                    <video src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" muted loop playsinline preload="metadata"></video>
+                                    <div class="card-meta">04 — Project Four</div>
+                              </article>
+
+                        </div>
+
+                        <div class="hero-overlay-titles">
+                              <h2>sound artist</h2>
+                              <br>
+                              <h2>producer</h2>
+                              <br>
+                              <h2>filmmaker</h2>
+                        </div>
+                  </div>
+            </section>
+            <div class="scroll-down"></div>
+            <!--------------- hero horizontal video gallery ends here --------------->
+
+
+
+            <!--------------- projects section starts here --------------->
+            <div class="container-fluid">
+                  <br>
+
+                  <h6>selected works</h6>
+                  <h6>_______________</h6>
+                  
+                  
+                  <div class="row">
+                        <div class="col-lg-3 project obobo" onclick="location.href='video/obobo.html'"></div>
+                        <div class="col-lg-3 project povo" onclick="location.href='video/povo.html'"></div>
+                        <div class="col-lg-3 project bg_album" onclick="location.href='sound/bg-album.html'"></div>  
+                        <div class="col-lg-3 project liquen-i" onclick="location.href='sound/liquen-i.html'"></div>
+                  </div>
+
+                  <div class="row">
+                        <div class="col-lg-3 project passinggaps" onclick="location.href='sound/passinggaps.html'"></div> 
+                        <div class="col-lg-3 project fb-samaritana" onclick="location.href='sound/fb-samaritana.html'"></div>
+                        <div class="col-lg-3 project heras2024" onclick="location.href='video/heras2024.html'"></div>
+                        <div class="col-lg-3 project naturamimesis" onclick="location.href='sound/naturamimesis.html'"></div>
+                        
+                  </div>
+
+                  <br><br>
+                  <h6></h6>
+                  <h6>musician, composer, sound artist, sound guy, producer, cinematographer, filmmaker</h6>
+                  <h6>in the bridge between sound and image, with a DIY atitude</h6>
+            </div>
+            <!--------------- projects section ends here --------------->
+
+
+
+            <!--------------- footer starts here --------------->
+            <div class="footer">
+                  <div class="container">
+                        <br><br>
+
+                        <div class="collab">
+                              <div class="row">
+                                    <div class="col-lg-12">
+                                         <!-- <p class="wow fadeInUp">Open for Collabs!</p> -->
+                                    </div> 
+                              </div>
+                        </div>
+
+                        <br>
+
+                        <div class="hr">
+                              <div class="row"></div>
+                        </div>
+
+                        <br><br>
+
+                        <div class="info">
+                              <div class="row container">
+                                    <div class="col-lg" id="address">
+                                          <p class="wow fadeInUp text-center" data-wow-delay="2s">Hello!</p>
+                                          <h4 class="wow fadeInUp text-center" data-wow-delay="0.2s"><a href = "mailto: lenoinlato@gmail.com">lenoinlato@gmail.com</a></h4>
+                                          <br><br>
+                                    </div>
+                                    <div class="col-lg" id="personal">
+                                          <p class="wow fadeInUp"></p>
+                                          <h4 class="wow fadeInUp text-center " data-wow-delay="0.2s"><a href = "https://www.instagram.com/lenoinlato">@lenoinlato</a></h4>
+                                          <br><br>
+                                    </div>
+                                   <!-- <div class="col-lg justify-content-center">
+                                          <h2 class="wow fadeInUp text-center " data-wow-delay="0.2s"><a href="https://lenoinlato.bandcamp.com/" class=" fa fa-bandcamp wow fadeInUp" data-wow-delay="0.4s"></a></h2>
+                                    <br><br> -->
+                              </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <!--------------- footer ends here --------------->
+
+            <br><br><br><br>
+
+      </div>
+
+      <!-- greensock cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script type="text/javascript">
+
+      // navigation starts here
+
+      $("#toggle").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $("#resize ul li a").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $(".close-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      // navigation ends here
+
+      // nav animation
+
+      TweenMax.from("#name", 1, {
+            delay: 0.2,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.from("#hero", 1, {
+            delay: 0.4,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.staggerFrom("#menu li a", 1, {
+            delay: 0.4,
+            opacity: 0,
+            ease: Expo.easeInOut
+      }, 0.1);
+
+      // nav animation ends
+
+      new WOW().init();
+
+      // horizontal background video gallery starts here
+      (function() {
+            const wrapper = document.getElementById('galleryWrapper');
+            const track = document.getElementById('galleryTrack');
+            const cards = document.querySelectorAll('.video-card');
+
+            if (!wrapper || !track) return;
+
+            let currentX = 0;
+            let targetX = 0;
+            const ease = 0.08;
+
+            function updateBounds() {
+                  const trackWidth = track.scrollWidth;
+                  const viewportWidth = window.innerWidth;
+                  const maxTranslate = Math.max(trackWidth - viewportWidth, 0);
+                  wrapper.style.height = `${maxTranslate + window.innerHeight}px`;
+            }
+
+            window.addEventListener('resize', updateBounds);
+            window.addEventListener('load', updateBounds);
+            updateBounds();
+
+            function onScroll() {
+                  const rect = wrapper.getBoundingClientRect();
+                  const maxScroll = wrapper.offsetHeight - window.innerHeight;
+                  if (maxScroll <= 0) return;
+                  const progress = Math.min(Math.max(-rect.top / maxScroll, 0), 1);
+                  const maxTranslate = Math.max(track.scrollWidth - window.innerWidth, 0);
+                  targetX = progress * maxTranslate;
+            }
+
+            window.addEventListener('scroll', onScroll, { passive: true });
+
+            function animate() {
+                  currentX += (targetX - currentX) * ease;
+                  const roundedX = Math.round(currentX * 100) / 100;
+                  track.style.transform = `translate3d(-${roundedX}px, 0, 0)`;
+                  requestAnimationFrame(animate);
+            }
+            animate();
+
+            cards.forEach((card) => {
+                  const video = card.querySelector('video');
+                  card.addEventListener('mouseenter', () => video.play().catch(() => {}));
+                  card.addEventListener('mouseleave', () => video.pause());
+            });
+
+            const observer = new IntersectionObserver(
+                  (entries) => {
+                        entries.forEach((entry) => {
+                              const video = entry.target.querySelector('video');
+                              if (entry.isIntersecting) {
+                                    video.play().catch(() => {});
+                              } else {
+                                    video.pause();
+                              }
+                        });
+                  },
+                  { threshold: 0.5 }
+            );
+
+            cards.forEach((card) => observer.observe(card));
+      })();
+      // horizontal background video gallery ends here
+
+      </script>
+</body>
+</html>
