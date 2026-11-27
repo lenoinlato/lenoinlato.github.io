@@ -31,7 +31,7 @@
       <script src="assets/js/wow.min.js"></script>
 
       <style>
-            /* Horizontal Background Video Gallery */
+            /* Horizontal Background Video Gallery (Drag / Swipe Controlled) */
             .gallery-wrapper {
                   position: relative;
                   width: 100%;
@@ -94,7 +94,7 @@
                   border-radius: 6px;
             }
 
-            /* Overlay hero titles on top of the sticky background gallery */
+            /* Overlay hero titles on top of the background gallery */
             .hero-overlay-titles {
                   position: absolute;
                   bottom: 10vh;
@@ -107,6 +107,78 @@
             .hero-overlay-titles h2 {
                   margin: 0;
                   line-height: 1.15;
+            }
+
+            /* Drag / Swipe Action Hint Pill */
+            .drag-hint {
+                  position: absolute;
+                  bottom: 10vh;
+                  right: 8vw;
+                  z-index: 15;
+                  display: inline-flex;
+                  align-items: center;
+                  gap: 10px;
+                  padding: 9px 16px;
+                  border-radius: 999px;
+                  background: rgba(20, 20, 20, 0.65);
+                  border: 1px solid rgba(255, 255, 255, 0.22);
+                  backdrop-filter: blur(10px);
+                  color: #fff;
+                  font-family: 'Kantumruy Pro', sans-serif;
+                  font-size: 0.78rem;
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                  pointer-events: none;
+                  transition: opacity 0.5s ease, transform 0.5s ease;
+            }
+
+            .drag-hint.is-hidden {
+                  opacity: 0;
+                  transform: translateY(8px);
+            }
+
+            .drag-hint-arrows {
+                  display: inline-block;
+                  animation: nudgeHorizontal 1.8s ease-in-out infinite;
+            }
+
+            @keyframes nudgeHorizontal {
+                  0%, 100% { transform: translateX(0); }
+                  35% { transform: translateX(-4px); }
+                  70% { transform: translateX(4px); }
+            }
+
+            /* Floating Custom Cursor Badge on Desktop Hover */
+            .drag-cursor-badge {
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  z-index: 40;
+                  padding: 8px 14px;
+                  border-radius: 999px;
+                  background: rgba(255, 255, 255, 0.92);
+                  color: #0a0a0a;
+                  font-family: 'Kantumruy Pro', sans-serif;
+                  font-size: 0.72rem;
+                  font-weight: 600;
+                  letter-spacing: 0.12em;
+                  text-transform: uppercase;
+                  pointer-events: none;
+                  opacity: 0;
+                  transform: translate(-50%, -50%) scale(0.85);
+                  transition: opacity 0.2s ease, transform 0.2s ease;
+                  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+            }
+
+            .drag-cursor-badge.is-visible {
+                  opacity: 1;
+                  transform: translate(-50%, -50%) scale(1);
+            }
+
+            @media (hover: none), (pointer: coarse) {
+                  .drag-cursor-badge {
+                        display: none !important;
+                  }
             }
 
             /* Keep navbar floating cleanly above the gallery */
@@ -126,6 +198,16 @@
                   .video-card {
                         width: 82vw;
                         height: 100vh;
+                  }
+
+                  .drag-hint {
+                        bottom: 4vh;
+                        right: auto;
+                        left: 8vw;
+                  }
+
+                  .hero-overlay-titles {
+                        bottom: 12vh;
                   }
             }
       </style>
@@ -178,44 +260,52 @@
 
 
             <!--------------- hero horizontal video gallery starts here --------------->
-            <section class="gallery-wrapper" id="galleryWrapper">
-                  <div class="gallery-sticky" id="hero">
-                        <div class="gallery-track" id="galleryTrack">
+            <section class="gallery-wrapper" id="hero">
+                  <div class="gallery-track" id="galleryTrack">
 
-                              <article class="video-card">
-                                    <video src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" muted loop playsinline preload="metadata"></video>
-                                    <div class="card-meta">01 — Showreel</div>
-                              </article>
+                        <article class="video-card">
+                              <video src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" muted loop playsinline preload="metadata"></video>
+                              
+                        </article>
 
-                              <article class="video-card">
-                                    <!-- Replace with your 2nd video URL/path -->
-                                    <video src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" muted loop playsinline preload="metadata"></video>
-                                    <div class="card-meta">02 — Project Two</div>
-                              </article>
+                        <article class="video-card">
+                              <!-- Replace with your 2nd video URL/path -->
+                              <video src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" muted loop playsinline preload="metadata"></video>
+                            
+                        </article>
 
-                              <article class="video-card">
-                                    <!-- Replace with your 3rd video URL/path -->
-                                    <video src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" muted loop playsinline preload="metadata"></video>
-                                    <div class="card-meta">03 — Project Three</div>
-                              </article>
+                        <article class="video-card">
+                              <!-- Replace with your 3rd video URL/path -->
+                              <video src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" muted loop playsinline preload="metadata"></video>
+                             
+                        </article>
 
-                              <article class="video-card">
-                                    <!-- Replace with your 4th video URL/path -->
-                                    <video src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" muted loop playsinline preload="metadata"></video>
-                                    <div class="card-meta">04 — Project Four</div>
-                              </article>
+                        <article class="video-card">
+                              <!-- Replace with your 4th video URL/path -->
+                              <video src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" muted loop playsinline preload="metadata"></video>
+                             
+                        </article>
 
-                        </div>
+                  </div>
 
-                        <div class="hero-overlay-titles">
-                              <h2>sound artist</h2>
-                              <br>
-                              <h2>producer</h2>
-                              <br>
-                              <h2>filmmaker</h2>
-                        </div>
+                  <div class="hero-overlay-titles">
+                        <h2>sound artist</h2>
+                        <br>
+                        <h2>producer</h2>
+                        <br>
+                        <h2>filmmaker</h2>
+                  </div>
+
+                  <div class="drag-hint" id="dragHint">
+                        <span class="drag-hint-arrows">&larr;</span>
+                        <span id="dragHintText">drag to explore</span>
+                        <span class="drag-hint-arrows">&rarr;</span>
                   </div>
             </section>
+
+            <!-- Floating cursor follower pill (desktop) -->
+            <div class="drag-cursor-badge" id="dragCursorBadge">drag</div>
+
             <div class="scroll-down"></div>
             <!--------------- hero horizontal video gallery ends here --------------->
 
@@ -351,20 +441,29 @@
 
       new WOW().init();
 
-      // horizontal background video gallery starts here
+      // horizontal grab/swipe background video gallery starts here
       (function() {
-            const wrapper = document.getElementById('galleryWrapper');
+            const gallery = document.getElementById('hero');
             const track = document.getElementById('galleryTrack');
-            if (!wrapper || !track) return;
+            const dragHint = document.getElementById('dragHint');
+            const dragHintText = document.getElementById('dragHintText');
+            const cursorBadge = document.getElementById('dragCursorBadge');
+            if (!gallery || !track) return;
 
-            // Shuffle video cards randomly on every page load (Fisher-Yates)
+            // Update hint wording for touch devices
+            const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+            if (isTouchDevice && dragHintText) {
+                  dragHintText.textContent = 'swipe to explore';
+            }
+
+            // 1. Shuffle video cards randomly on every page load (Fisher-Yates)
             const cardArray = Array.from(track.querySelectorAll('.video-card'));
             for (let i = cardArray.length - 1; i > 0; i--) {
                   const j = Math.floor(Math.random() * (i + 1));
                   [cardArray[i], cardArray[j]] = [cardArray[j], cardArray[i]];
             }
 
-            // Re-append shuffled cards and update 01, 02... index labels to match
+            // Re-append shuffled cards and update 01, 02... index labels
             cardArray.forEach((card, index) => {
                   track.appendChild(card);
                   const meta = card.querySelector('.card-meta');
@@ -377,31 +476,98 @@
 
             const cards = track.querySelectorAll('.video-card');
 
+            // 2. Grab / Swipe Physics with Inertia & Soft Edge Bounds
             let currentX = 0;
             let targetX = 0;
-            const ease = 0.08;
+            let maxTranslate = 0;
+            let isDragging = false;
+            let startX = 0;
+            let startTargetX = 0;
+            let lastPointerX = 0;
+            let velocity = 0;
+            let hasInteracted = false;
+            const ease = 0.09;
 
             function updateBounds() {
-                  const trackWidth = track.scrollWidth;
-                  const viewportWidth = window.innerWidth;
-                  const maxTranslate = Math.max(trackWidth - viewportWidth, 0);
-                  wrapper.style.height = `${maxTranslate + window.innerHeight}px`;
+                  maxTranslate = Math.max(track.scrollWidth - window.innerWidth, 0);
+                  targetX = Math.min(Math.max(targetX, 0), maxTranslate);
             }
 
             window.addEventListener('resize', updateBounds);
             window.addEventListener('load', updateBounds);
             updateBounds();
 
-            function onScroll() {
-                  const rect = wrapper.getBoundingClientRect();
-                  const maxScroll = wrapper.offsetHeight - window.innerHeight;
-                  if (maxScroll <= 0) return;
-                  const progress = Math.min(Math.max(-rect.top / maxScroll, 0), 1);
-                  const maxTranslate = Math.max(track.scrollWidth - window.innerWidth, 0);
-                  targetX = progress * maxTranslate;
+            function clampTarget(val) {
+                  return Math.min(Math.max(val, 0), maxTranslate);
             }
 
-            window.addEventListener('scroll', onScroll, { passive: true });
+            function hideHintOnce() {
+                  if (!hasInteracted && dragHint) {
+                        hasInteracted = true;
+                        dragHint.classList.add('is-hidden');
+                  }
+            }
+
+            // Pointer events handle mouse drag AND touch swipe uniformly
+            gallery.addEventListener('pointerdown', (e) => {
+                  // Only primary mouse button or touch/pen
+                  if (e.pointerType === 'mouse' && e.button !== 0) return;
+                  isDragging = true;
+                  startX = e.clientX;
+                  lastPointerX = e.clientX;
+                  startTargetX = targetX;
+                  velocity = 0;
+                  gallery.classList.add('is-dragging');
+                  if (cursorBadge) cursorBadge.textContent = 'grabbing';
+                  gallery.setPointerCapture(e.pointerId);
+            });
+
+            gallery.addEventListener('pointermove', (e) => {
+                  // Move floating desktop cursor badge and ensure it is visible while inside gallery
+                  if (cursorBadge && e.pointerType === 'mouse') {
+                        cursorBadge.style.left = `${e.clientX}px`;
+                        cursorBadge.style.top = `${e.clientY}px`;
+                        cursorBadge.classList.add('is-visible');
+                  }
+
+                  if (!isDragging) return;
+                  const deltaX = e.clientX - startX;
+                  if (Math.abs(deltaX) > 6) {
+                        hideHintOnce();
+                  }
+                  velocity = (lastPointerX - e.clientX) * 1.4;
+                  lastPointerX = e.clientX;
+                  // 1.25x multiplier makes dragging feel responsive on both phone and desktop
+                  targetX = clampTarget(startTargetX - deltaX * 1.25);
+            });
+
+            function endDrag(e) {
+                  if (!isDragging) return;
+                  isDragging = false;
+                  gallery.classList.remove('is-dragging');
+                  if (cursorBadge) cursorBadge.textContent = 'drag';
+                  // Apply throw momentum after releasing
+                  targetX = clampTarget(targetX + velocity * 6);
+                  if (e && e.pointerId !== undefined && gallery.hasPointerCapture(e.pointerId)) {
+                        gallery.releasePointerCapture(e.pointerId);
+                  }
+            }
+
+            gallery.addEventListener('pointerup', endDrag);
+            gallery.addEventListener('pointercancel', endDrag);
+
+            // Show/hide floating cursor badge when hovering over gallery on desktop
+            gallery.addEventListener('pointerenter', (e) => {
+                  if (cursorBadge && e.pointerType === 'mouse') {
+                        cursorBadge.classList.add('is-visible');
+                  }
+            });
+
+            gallery.addEventListener('pointerleave', (e) => {
+                  if (cursorBadge && e.pointerType === 'mouse') {
+                        cursorBadge.classList.remove('is-visible');
+                  }
+            });
 
             function animate() {
                   currentX += (targetX - currentX) * ease;
@@ -411,10 +577,10 @@
             }
             animate();
 
+            // 3. Random Video Start Times & Playback Management
             cards.forEach((card) => {
                   const video = card.querySelector('video');
 
-                  // Jump to a random start point (0% to 80% of duration) once metadata loads
                   const setRandomStart = () => {
                         if (video.duration && isFinite(video.duration)) {
                               video.currentTime = Math.random() * (video.duration * 0.8);
@@ -442,12 +608,12 @@
                               }
                         });
                   },
-                  { threshold: 0.5 }
+                  { threshold: 0.4 }
             );
 
             cards.forEach((card) => observer.observe(card));
       })();
-      // horizontal background video gallery ends here
+      // horizontal grab/swipe background video gallery ends here
 
       </script>
 </body>

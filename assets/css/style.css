@@ -1205,7 +1205,7 @@ textarea:focus {
   border-radius: 12px;
   overflow: hidden;
   background: #161616;
-  cursor: grab;
+  /* cursor: grab; */ /* removed this line because now there is a "grab" message overlayed */
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
