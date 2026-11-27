@@ -10,9 +10,8 @@
 
       <!-- stylesheet -->
       <link rel="stylesheet" href="assets/css/style.css">
-      <link rel="stylesheet" href="assets/css/audiogallery.css">
+      <link rel="stylesheet" href="assets/css/highlights.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="video/video.css">
 
       <!-- bootstrap cdns -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -42,14 +41,9 @@
                   </span>
 
                   <ul id="menu">
-                        <style>
-                              .under {
-                                    text-decoration: underline;
-                              }
-                        </style>
                         <li><a href="index.html">home</a></li>
                         <li><a href="sound.html">sound</a></li>
-                        <li><a class="under" href="video.html">video</a></li>
+                        <li><a href="video.html">video</a></li>
                         <li><a href="projects.html">projects</a></li>
                         <li><a href="discography.html">discography</a></li>
                         <li><a href="live.html">live</a></li>
@@ -68,14 +62,9 @@
                   <div class="close-btn">close</div>
 
                   <ul id="menu">
-                        <style>
-                              .under {
-                                    text-decoration: underline;
-                              }
-                        </style>
                         <li><a href="index.html">home</a></li>
                         <li><a href="sound.html">sound</a></li>
-                        <li><a class="under" href="video.html">video</a></li>
+                        <li><a href="video.html">video</a></li>
                         <li><a href="projects.html">projects</a></li>
                         <li><a href="discography.html">discography</a></li>
                         <li><a href="live.html">live</a></li>
@@ -84,46 +73,76 @@
                         <li><a href="mailto:lenoinlato@gmail.com">let's talk</a></li>
                   </ul>
             </div>
-
-            <section class="gallery-wrapper" id="galleryWrapper">
-                  <div class="gallery-sticky">
-                        <div class="gallery-track" id="galleryTrack">
-                              
-                              <article class="video-card">
-                              <video src="video/videos/1.mp4" poster="thumb-1.jpg" muted loop playsinline preload="metadata"></video>
-                              <div class="card-meta">01 — Project Alpha</div>
-                              </article>
-
-                              <article class="video-card">
-                              <video src="video/videos/2.mp4" poster="thumb-2.jpg" muted loop playsinline preload="metadata"></video>
-                              <div class="card-meta">02 — Commercial Reel</div>
-                              </article>
-
-                              <article class="video-card">
-                              <video src="video/videos/3.mp4" poster="thumb-3.jpg" muted loop playsinline preload="metadata"></video>
-                              <div class="card-meta">03 — Motion Study</div>
-                              </article>
-
-                              <!-- Add as many cards as needed -->
-                        </div>
-                  </div>
-            </section>
             <!--------------- navbar ends here --------------->
 
-            <!--------------- hero section starts here --------------> 
-            <div class="her" id="her">
-            </div>
 
+
+            <!--------------- hero section starts here --------------->
+            <div class="hero linha" id="hero">
+                  <div class="header coluna coolgrad">
+                        <video autoplay loop muted width="90%" class="coolgrad">
+                              <source src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" type="video/mp4" >
+                        </video> 
+                  </div>
+                  <div>
+                        <h2>sound artist</h2>
+                        <br>
+                        <h2>producer</h2>
+                        <br>
+                        <h2>filmmaker</h2>
+                  </div>
+            </div>
+            <div class="scroll-down"></div>
             <!--------------- hero section ends here --------------->
 
-            <!--------------- content starts here --------------->
-            
 
-            <!--------------- content ends here --------------->
+
+            <!--------------- projects section starts here --------------->
+            <div class="container-fluid">
+                  <br>
+
+                  <h6>selected works</h6>
+                  <h6>_______________</h6>
+                  
+                  
+                  <div class="row">
+                        <div class="col-lg-3 project obobo" onclick="location.href='video/obobo.html'"></div>
+                        <div class="col-lg-3 project povo" onclick="location.href='video/povo.html'"></div>
+                        <div class="col-lg-3 project bg_album" onclick="location.href='sound/bg-album.html'"></div>  
+                        <div class="col-lg-3 project liquen-i" onclick="location.href='sound/liquen-i.html'"></div>
+                  </div>
+
+                  <div class="row">
+                        <div class="col-lg-3 project passinggaps" onclick="location.href='sound/passinggaps.html'"></div> 
+                        <div class="col-lg-3 project fb-samaritana" onclick="location.href='sound/fb-samaritana.html'"></div>
+                        <div class="col-lg-3 project heras2024" onclick="location.href='video/heras2024.html'"></div>
+                        <div class="col-lg-3 project naturamimesis" onclick="location.href='sound/naturamimesis.html'"></div>
+                        
+                  </div>
+
+                  <br><br>
+                  <h6></h6>
+                  <h6>musician, composer, sound artist, sound guy, producer, cinematographer, filmmaker</h6>
+                  <h6>in the bridge between sound and image, with a DIY atitude</h6>
+            </div>
+            <!--------------- projects section ends here --------------->
+
+
 
             <!--------------- footer starts here --------------->
             <div class="footer">
                   <div class="container">
+                        <br><br>
+
+                        <div class="collab">
+                              <div class="row">
+                                    <div class="col-lg-12">
+                                         <!-- <p class="wow fadeInUp">Open for Collabs!</p> -->
+                                    </div> 
+                              </div>
+                        </div>
+
+                        <br>
 
                         <div class="hr">
                               <div class="row"></div>
@@ -133,21 +152,20 @@
 
                         <div class="info">
                               <div class="row container">
+                                    <div class="col-lg" id="address">
+                                          <p class="wow fadeInUp text-center" data-wow-delay="2s">Hello!</p>
+                                          <h4 class="wow fadeInUp text-center" data-wow-delay="0.2s"><a href = "mailto: lenoinlato@gmail.com">lenoinlato@gmail.com</a></h4>
+                                          <br><br>
+                                    </div>
                                     <div class="col-lg" id="personal">
                                           <p class="wow fadeInUp"></p>
                                           <h4 class="wow fadeInUp text-center " data-wow-delay="0.2s"><a href = "https://www.instagram.com/lenoinlato">@lenoinlato</a></h4>
                                           <br><br>
                                     </div>
-
-                                    <div class="col-lg" id="address">
-                                          <p class="wow fadeInUp text-center" data-wow-delay="2s">what do you have in mind?</p>
-                                          <h4 class="wow fadeInUp text-center" data-wow-delay="0.2s"><a href = "mailto: lenoinlato@gmail.com">lenoinlato@gmail.com</a></h4>
-                                          <br><br>
-                                    </div>
-                                    <div class="col-lg justify-content-center">
-                                                <h2 class="wow fadeInUp text-center " data-wow-delay="0.2s"><a href="https://www.instagram.com/thisisfolden" class=" fa fa-instagram wow fadeInUp" data-wow-delay="0.4s"></a></h2>
-                                          <br><br>
-                                    </div>
+                                   <!-- <div class="col-lg justify-content-center">
+                                          <h2 class="wow fadeInUp text-center " data-wow-delay="0.2s"><a href="https://lenoinlato.bandcamp.com/" class=" fa fa-bandcamp wow fadeInUp" data-wow-delay="0.4s"></a></h2>
+                                    <br><br> -->
+                              </div>
                               </div>
                         </div>
                   </div>
@@ -210,67 +228,5 @@
       new WOW().init();
 
       </script>
-
-      <script>
-
-    const wrapper = document.getElementById('galleryWrapper');
-    const track = document.getElementById('galleryTrack');
-    const cards = document.querySelectorAll('.video-card');
-
-    let currentX = 0;
-    let targetX = 0;
-    const ease = 0.08;
-
-    function updateBounds() {
-      const trackWidth = track.scrollWidth;
-      const viewportWidth = window.innerWidth;
-      const maxTranslate = trackWidth - viewportWidth;
-      wrapper.style.height = `${maxTranslate + window.innerHeight}px`;
-    }
-
-    window.addEventListener('resize', updateBounds);
-    updateBounds();
-
-    function onScroll() {
-      const rect = wrapper.getBoundingClientRect();
-      const maxScroll = wrapper.offsetHeight - window.innerHeight;
-      const progress = Math.min(Math.max(-rect.top / maxScroll, 0), 1);
-      const maxTranslate = track.scrollWidth - window.innerWidth;
-      targetX = progress * maxTranslate;
-    }
-
-    window.addEventListener('scroll', onScroll, { passive: true });
-
-    function animate() {
-      currentX += (targetX - currentX) * ease;
-      const roundedX = Math.round(currentX * 100) / 100;
-      track.style.transform = `translate3d(-${roundedX}px, 0, 0)`;
-      requestAnimationFrame(animate);
-    }
-    animate();
-
-    cards.forEach((card) => {
-      const video = card.querySelector('video');
-      card.addEventListener('mouseenter', () => video.play().catch(() => {}));
-      card.addEventListener('mouseleave', () => video.pause());
-    });
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const video = entry.target.querySelector('video');
-          if (entry.isIntersecting) {
-            video.play().catch(() => {});
-          } else {
-            video.pause();
-          }
-        });
-      },
-      { threshold: 0.6 }
-    );
-
-    cards.forEach((card) => observer.observe(card));
-  </script>
-
 </body>
 </html>

@@ -30,6 +30,106 @@
       <link rel="stylesheet" href="animate.css">
       <script src="assets/js/wow.min.js"></script>
 
+      <style>
+            /* Horizontal Background Video Gallery */
+            .gallery-wrapper {
+                  position: relative;
+                  width: 100%;
+                  z-index: 1;
+            }
+
+            .gallery-sticky {
+                  position: sticky;
+                  top: 0;
+                  width: 100vw;
+                  height: 100dvh;
+                  overflow: hidden;
+                  display: flex;
+                  align-items: center;
+            }
+
+            .gallery-track {
+                  display: flex;
+                  gap: 2.5vw;
+                  padding: 0 8vw;
+                  will-change: transform;
+            }
+
+            .video-card {
+                  position: relative;
+                  flex: 0 0 auto;
+                  width: 52vw;
+                  height: 100vh;
+                  border-radius: 0px;
+                  overflow: hidden;
+                  background: #111;
+                  cursor: grab;
+                  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            }
+
+            .video-card:hover {
+                  transform: scale(0.985);
+            }
+
+            .video-card video {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  display: block;
+                  pointer-events: none;
+            }
+
+            .card-meta {
+                  position: absolute;
+                  bottom: 16px;
+                  left: 18px;
+                  font-family: 'Kantumruy Pro', sans-serif;
+                  font-size: 0.8rem;
+                  letter-spacing: 0.06em;
+                  text-transform: uppercase;
+                  color: #fff;
+                  background: rgba(0, 0, 0, 0.55);
+                  backdrop-filter: blur(8px);
+                  padding: 6px 12px;
+                  border-radius: 6px;
+            }
+
+            /* Overlay hero titles on top of the sticky background gallery */
+            .hero-overlay-titles {
+                  position: absolute;
+                  bottom: 10vh;
+                  left: 8vw;
+                  z-index: 10;
+                  pointer-events: none;
+                  mix-blend-mode: difference;
+            }
+
+            .hero-overlay-titles h2 {
+                  margin: 0;
+                  line-height: 1.15;
+            }
+
+            /* Keep navbar floating cleanly above the gallery */
+            nav {
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  z-index: 50;
+            }
+
+            #resize {
+                  z-index: 60;
+            }
+
+            @media (max-width: 768px) {
+                  .video-card {
+                        width: 82vw;
+                        height: 100vh;
+                  }
+            }
+      </style>
+
 </head>
 <body>
       <div class="wrapper unselectable">
@@ -77,23 +177,47 @@
 
 
 
-            <!--------------- hero section starts here --------------->
-            <div class="hero linha" id="hero">
-                  <div class="header coluna coolgrad">
-                        <video autoplay loop muted width="90%" class="coolgrad">
-                              <source src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" type="video/mp4" >
-                        </video> 
+            <!--------------- hero horizontal video gallery starts here --------------->
+            <section class="gallery-wrapper" id="galleryWrapper">
+                  <div class="gallery-sticky" id="hero">
+                        <div class="gallery-track" id="galleryTrack">
+
+                              <article class="video-card">
+                                    <video src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" muted loop playsinline preload="metadata"></video>
+                                    <div class="card-meta">01 — Showreel</div>
+                              </article>
+
+                              <article class="video-card">
+                                    <!-- Replace with your 2nd video URL/path -->
+                                    <video src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" muted loop playsinline preload="metadata"></video>
+                                    <div class="card-meta">02 — Project Two</div>
+                              </article>
+
+                              <article class="video-card">
+                                    <!-- Replace with your 3rd video URL/path -->
+                                    <video src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" muted loop playsinline preload="metadata"></video>
+                                    <div class="card-meta">03 — Project Three</div>
+                              </article>
+
+                              <article class="video-card">
+                                    <!-- Replace with your 4th video URL/path -->
+                                    <video src="https://github.com/lenoinlato/test/raw/main/showreel3.mp4" muted loop playsinline preload="metadata"></video>
+                                    <div class="card-meta">04 — Project Four</div>
+                              </article>
+
+                        </div>
+
+                        <div class="hero-overlay-titles">
+                              <h2>sound artist</h2>
+                              <br>
+                              <h2>producer</h2>
+                              <br>
+                              <h2>filmmaker</h2>
+                        </div>
                   </div>
-                  <div>
-                        <h2>sound artist</h2>
-                        <br>
-                        <h2>producer</h2>
-                        <br>
-                        <h2>filmmaker</h2>
-                  </div>
-            </div>
+            </section>
             <div class="scroll-down"></div>
-            <!--------------- hero section ends here --------------->
+            <!--------------- hero horizontal video gallery ends here --------------->
 
 
 
@@ -226,6 +350,104 @@
       // nav animation ends
 
       new WOW().init();
+
+      // horizontal background video gallery starts here
+      (function() {
+            const wrapper = document.getElementById('galleryWrapper');
+            const track = document.getElementById('galleryTrack');
+            if (!wrapper || !track) return;
+
+            // Shuffle video cards randomly on every page load (Fisher-Yates)
+            const cardArray = Array.from(track.querySelectorAll('.video-card'));
+            for (let i = cardArray.length - 1; i > 0; i--) {
+                  const j = Math.floor(Math.random() * (i + 1));
+                  [cardArray[i], cardArray[j]] = [cardArray[j], cardArray[i]];
+            }
+
+            // Re-append shuffled cards and update 01, 02... index labels to match
+            cardArray.forEach((card, index) => {
+                  track.appendChild(card);
+                  const meta = card.querySelector('.card-meta');
+                  if (meta) {
+                        const titleOnly = meta.textContent.replace(/^\d+\s*—\s*/, '');
+                        const num = String(index + 1).padStart(2, '0');
+                        meta.textContent = `${num} — ${titleOnly}`;
+                  }
+            });
+
+            const cards = track.querySelectorAll('.video-card');
+
+            let currentX = 0;
+            let targetX = 0;
+            const ease = 0.08;
+
+            function updateBounds() {
+                  const trackWidth = track.scrollWidth;
+                  const viewportWidth = window.innerWidth;
+                  const maxTranslate = Math.max(trackWidth - viewportWidth, 0);
+                  wrapper.style.height = `${maxTranslate + window.innerHeight}px`;
+            }
+
+            window.addEventListener('resize', updateBounds);
+            window.addEventListener('load', updateBounds);
+            updateBounds();
+
+            function onScroll() {
+                  const rect = wrapper.getBoundingClientRect();
+                  const maxScroll = wrapper.offsetHeight - window.innerHeight;
+                  if (maxScroll <= 0) return;
+                  const progress = Math.min(Math.max(-rect.top / maxScroll, 0), 1);
+                  const maxTranslate = Math.max(track.scrollWidth - window.innerWidth, 0);
+                  targetX = progress * maxTranslate;
+            }
+
+            window.addEventListener('scroll', onScroll, { passive: true });
+
+            function animate() {
+                  currentX += (targetX - currentX) * ease;
+                  const roundedX = Math.round(currentX * 100) / 100;
+                  track.style.transform = `translate3d(-${roundedX}px, 0, 0)`;
+                  requestAnimationFrame(animate);
+            }
+            animate();
+
+            cards.forEach((card) => {
+                  const video = card.querySelector('video');
+
+                  // Jump to a random start point (0% to 80% of duration) once metadata loads
+                  const setRandomStart = () => {
+                        if (video.duration && isFinite(video.duration)) {
+                              video.currentTime = Math.random() * (video.duration * 0.8);
+                        }
+                  };
+
+                  if (video.readyState >= 1) {
+                        setRandomStart();
+                  } else {
+                        video.addEventListener('loadedmetadata', setRandomStart, { once: true });
+                  }
+
+                  card.addEventListener('mouseenter', () => video.play().catch(() => {}));
+                  card.addEventListener('mouseleave', () => video.pause());
+            });
+
+            const observer = new IntersectionObserver(
+                  (entries) => {
+                        entries.forEach((entry) => {
+                              const video = entry.target.querySelector('video');
+                              if (entry.isIntersecting) {
+                                    video.play().catch(() => {});
+                              } else {
+                                    video.pause();
+                              }
+                        });
+                  },
+                  { threshold: 0.5 }
+            );
+
+            cards.forEach((card) => observer.observe(card));
+      })();
+      // horizontal background video gallery ends here
 
       </script>
 </body>
